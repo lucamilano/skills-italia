@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "catalog_version": "0.7.0",
+  "checked_on": "2026-10-22",
+  "scope": "Bootstrap Italia 2.x only; no inference for 3.x, Dev Kit, other libraries",
+  "rules": [
+    {
+      "id": "header-mobile-dialog",
+      "component": "header",
+      "introduced_in": "2.15.0",
+      "summary": "La navigazione mobile e in zoom elevato usa un pattern dialog con backdrop, focus trap e inert.",
+      "check": "Riprendere il markup della versione installata; provare apertura, Escape, ritorno focus, zoom e screen reader.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "header-dropdown-toggle",
+      "component": "header",
+      "introduced_in": "2.8.0",
+      "summary": "Il toggle dropdown diventa un button e cambia il markup dei megamenu.",
+      "check": "Controllare toggle, ruoli, tastiera e markup dopo eventuale upgrade.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "megamenu-mobile-dialog",
+      "component": "navigation",
+      "introduced_in": "2.15.0",
+      "summary": "Il megamenu mobile eredita il pattern di navigazione dialog.",
+      "check": "Verificare focus, chiusura e overlay sul layout reale.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/megamenu/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "sidebar-collapse-roles",
+      "component": "navigation",
+      "introduced_in": "2.8.0",
+      "summary": "I trigger link dei collapse nella sidebar richiedono aggiornamenti di ruolo.",
+      "check": "Preferire pulsanti semantici per azioni e verificare la documentazione della versione.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/breaking-change/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "input-floating-active",
+      "component": "forms",
+      "introduced_in": "2.2.0",
+      "summary": "Label floating con campo già valorizzato o placeholder: usare la classe active sulla label.",
+      "check": "Controllare che etichetta e valore non si sovrappongano anche con autocomplete browser.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/form/input/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "input-group-markup",
+      "component": "forms",
+      "introduced_in": "2.8.0",
+      "summary": "input-group-prepend rimosso in favore di input-group-text.",
+      "check": "Rivedere addon e input group del vecchio markup.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/form/input/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "password-accessibility",
+      "component": "forms",
+      "introduced_in": "2.10.0",
+      "summary": "Password input rivisto: aria-describedby, button role=switch e aria-checked; altri adeguamenti al markup.",
+      "check": "Usare esempio corrispondente alla versione; provare stato annunciato e tastiera.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/form/input/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "input-form-control",
+      "component": "forms",
+      "introduced_in": "2.11.0",
+      "summary": "Per input diversi da submit, file, radio e checkbox applicare form-control.",
+      "check": "Verificare classi e rendering degli input applicabili.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/form/input/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "steppers-index",
+      "component": "steppers",
+      "introduced_in": "2.3.0",
+      "summary": "steppers-index diventa span fuori dalla lista ul.",
+      "check": "Verificare struttura DOM e indicatori dello step.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/componenti/steppers/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "steppers-svg-decorative",
+      "component": "steppers",
+      "introduced_in": "2.13.0",
+      "summary": "SVG non interattivi degli steppers necessitano aria-hidden=true.",
+      "check": "Controllare nomi accessibili, step corrente e icone decorative.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/componenti/steppers/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    },
+    {
+      "id": "focus-mouse-attribute",
+      "component": "global",
+      "introduced_in": "2.14.0",
+      "summary": "La gestione focus tastiera usa data-focus-mouse al posto di focus--mouse.",
+      "check": "Rimuovere dipendenze da vecchi selettori personalizzati solo dopo verifica.",
+      "source": "https://italia.github.io/bootstrap-italia/docs/",
+      "evidence": "official-documentation",
+      "runtime_verified": false
+    }
+  ]
+}

@@ -1,0 +1,734 @@
+{
+  "baseline": "Supplied standalone skill before migration; no Git history was present.",
+  "files": [
+    {
+      "source": ".gitignore",
+      "destination": ".gitignore",
+      "source_sha256": "7c1213f2e26c79ff29d780bb696ce970221f1d9d31aba2eed6c8bd4f174cd60d",
+      "current_sha256": "a3a2277195f59fa472267528377a86e4023ee3a03de86c4446f1a2b562cf3de3",
+      "status": "adapted"
+    },
+    {
+      "source": "CHANGELOG.md",
+      "destination": "skills/italian-pa-frontend/CHANGELOG.md",
+      "source_sha256": "2b1371970af6467abbcb23c518d3dc817bb1323a8975a28c9251151fcc75b3c2",
+      "current_sha256": "2b1371970af6467abbcb23c518d3dc817bb1323a8975a28c9251151fcc75b3c2",
+      "status": "preserved"
+    },
+    {
+      "source": "LICENSE",
+      "destination": "LICENSE",
+      "source_sha256": "6a540ef282c3ca6a2723283548ad56f83812ad179b88a98913dd7cdef29b2155",
+      "current_sha256": "ab1a264b0aabaeec45fcad85fb63eb693e5b783e46061bc95e71f5183e2f7b41",
+      "status": "adapted"
+    },
+    {
+      "source": "README.md",
+      "destination": "skills/italian-pa-frontend/README.md",
+      "source_sha256": "9a471803a82a94e54a7af5725b167d7525ac93cd438320c90223e7437bc6311b",
+      "current_sha256": "58352970d7edf6efa767401997b1d5530119bcf737f997727fb7915b029808fd",
+      "status": "adapted"
+    },
+    {
+      "source": "RELEASE_NOTES.md",
+      "destination": "skills/italian-pa-frontend/RELEASE_NOTES.md",
+      "source_sha256": "6cebc7e10dad5dc6fa22b4f1f2adeca926a8b2c3b875bb91b1bea99824075e50",
+      "current_sha256": "6cebc7e10dad5dc6fa22b4f1f2adeca926a8b2c3b875bb91b1bea99824075e50",
+      "status": "preserved"
+    },
+    {
+      "source": "ROADMAP.md",
+      "destination": "skills/italian-pa-frontend/ROADMAP.md",
+      "source_sha256": "09afa9621237beccbf4505197047e8e37dcc03a93a3d42f6e63d0545b48537bb",
+      "current_sha256": "09afa9621237beccbf4505197047e8e37dcc03a93a3d42f6e63d0545b48537bb",
+      "status": "preserved"
+    },
+    {
+      "source": "SKILL.md",
+      "destination": "skills/italian-pa-frontend/SKILL.md",
+      "source_sha256": "6eadd289ad68f8ca8622f81c4ddef8eaf35a45b81824023f288f00f9d07fe81c",
+      "current_sha256": "af162b1962faa16ac434e36ba72ab8f80fa604295b898255972745c1e7d2b848",
+      "status": "adapted"
+    },
+    {
+      "source": ".github/workflows/checks.yml",
+      "destination": ".github/workflows/checks.yml",
+      "source_sha256": "67bf33cda27572620424dd3d5eeed371e59903511e1c90a66ee51bc1d664b329",
+      "current_sha256": "2e6f770fbc19ea153b5c8242d13925560ac0044103bd7625d4682597cd46c957",
+      "status": "adapted"
+    },
+    {
+      "source": "browser-tests/.gitignore",
+      "destination": "skills/italian-pa-frontend/browser-tests/.gitignore",
+      "source_sha256": "f715e01d79c402693623f0e9c3316e0645a76f81b5910a059ea4bd2f6a1fcb60",
+      "current_sha256": "f715e01d79c402693623f0e9c3316e0645a76f81b5910a059ea4bd2f6a1fcb60",
+      "status": "preserved"
+    },
+    {
+      "source": "browser-tests/package.json",
+      "destination": "skills/italian-pa-frontend/browser-tests/package.json",
+      "source_sha256": "fad1d04dabe14560b526a56eec5488135d2473353e12f7dbaba4a70b7dc3e61b",
+      "current_sha256": "ac767ac2b213a2f07ecec0969123c5914121d59279b512c1fe45c103e650c737",
+      "status": "adapted"
+    },
+    {
+      "source": "browser-tests/playwright.config.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/playwright.config.mjs",
+      "source_sha256": "cb6526683f2c477f8f9673c6e4e46107637f5d29effd37ce61ca0674b7732b6e",
+      "current_sha256": "cb6526683f2c477f8f9673c6e4e46107637f5d29effd37ce61ca0674b7732b6e",
+      "status": "preserved"
+    },
+    {
+      "source": "browser-tests/README.md",
+      "destination": "skills/italian-pa-frontend/browser-tests/README.md",
+      "source_sha256": "f385db0f0c02ecf69db268bf6e7fb4e630a6d99da6c19bcc0e65a666bfce63eb",
+      "current_sha256": "bf997b9a553b63e78028091176bd57d1fb517d5d48c2d5f579241c20ee74e3fa",
+      "status": "adapted"
+    },
+    {
+      "source": "browser-tests/config/example.json",
+      "destination": "skills/italian-pa-frontend/browser-tests/config/example.json",
+      "source_sha256": "58171e791d08a6879c80417600249b7e63c572e96097701ba9d98e509d519330",
+      "current_sha256": "58171e791d08a6879c80417600249b7e63c572e96097701ba9d98e509d519330",
+      "status": "preserved"
+    },
+    {
+      "source": "browser-tests/lib/settings.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/lib/settings.mjs",
+      "source_sha256": "5d54b319b860a455bafe4d2c69e008972d0d8487c25ca90d6f6ea1da2431ab92",
+      "current_sha256": "85e203de52b4e44e37f6cdc3cba96136a9c659852f68c28623fb56fcb69b1554",
+      "status": "adapted"
+    },
+    {
+      "source": "browser-tests/lib/visual-review.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/lib/visual-review.mjs",
+      "source_sha256": "c5e467eb9f8b7b37df9ac504684951df6c035f3b5693d3c7f860941e06f711dc",
+      "current_sha256": "c5e467eb9f8b7b37df9ac504684951df6c035f3b5693d3c7f860941e06f711dc",
+      "status": "preserved"
+    },
+    {
+      "source": "browser-tests/scripts/config.test.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/scripts/config.test.mjs",
+      "source_sha256": "487ae70463b391664686b49d1678e659a32891894cd3aad7bd32cf926f1fd985",
+      "current_sha256": "869d862ea95a56ee33832237a90b2c410b9aeb9c4a75cd21641a0bb0d9e854cd",
+      "status": "adapted"
+    },
+    {
+      "source": "browser-tests/scripts/review.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/scripts/review.mjs",
+      "source_sha256": "cf053470bb12b4cb70109f69171e12b303151f13d34bcb40053437cfaf9bbff3",
+      "current_sha256": "25861365113123096fb5f0947192a6a40b434a7d7c26e149749ebf9f364743ed",
+      "status": "adapted"
+    },
+    {
+      "source": "browser-tests/scripts/visual-review.test.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/scripts/visual-review.test.mjs",
+      "source_sha256": "d61cd74b559a59d3becd644299575f815ec8fd7938cdf81970af5c627d5724c6",
+      "current_sha256": "d61cd74b559a59d3becd644299575f815ec8fd7938cdf81970af5c627d5724c6",
+      "status": "preserved"
+    },
+    {
+      "source": "browser-tests/tests/components.spec.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/tests/components.spec.mjs",
+      "source_sha256": "70ecdb76a949f68452b9610d240d0ba104798d20fdb3203fb53e018636ac6f0f",
+      "current_sha256": "70ecdb76a949f68452b9610d240d0ba104798d20fdb3203fb53e018636ac6f0f",
+      "status": "preserved"
+    },
+    {
+      "source": "browser-tests/tests/pages.spec.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/tests/pages.spec.mjs",
+      "source_sha256": "7ba3ac4f08ba478741bc77bfc7fc84168cbe531ddd2e0927d1cf3b5bffe46dec",
+      "current_sha256": "7ba3ac4f08ba478741bc77bfc7fc84168cbe531ddd2e0927d1cf3b5bffe46dec",
+      "status": "preserved"
+    },
+    {
+      "source": "browser-tests/tests/visual-capture.spec.mjs",
+      "destination": "skills/italian-pa-frontend/browser-tests/tests/visual-capture.spec.mjs",
+      "source_sha256": "d059cc39270a26512acc9214bff00a2117df6f16b625c98ae46f7b221939d941",
+      "current_sha256": "d059cc39270a26512acc9214bff00a2117df6f16b625c98ae46f7b221939d941",
+      "status": "preserved"
+    },
+    {
+      "source": "catalog/administrative-workflows.json",
+      "destination": "skills/italian-pa-frontend/catalog/administrative-workflows.json",
+      "source_sha256": "0d94f1a634adb8479034dc7690d64a1426fb83959602f3086d84561386abb365",
+      "current_sha256": "0d94f1a634adb8479034dc7690d64a1426fb83959602f3086d84561386abb365",
+      "status": "preserved"
+    },
+    {
+      "source": "catalog/components.json",
+      "destination": "skills/italian-pa-frontend/catalog/components.json",
+      "source_sha256": "0fb314e0184de07531ac87c435af80a132043f9a911986aef2dad3596abab9c3",
+      "current_sha256": "0fb314e0184de07531ac87c435af80a132043f9a911986aef2dad3596abab9c3",
+      "status": "preserved"
+    },
+    {
+      "source": "catalog/version-rules.json",
+      "destination": "skills/italian-pa-frontend/catalog/version-rules.json",
+      "source_sha256": "5d6ac0c3b0c9c3a8c5fa5821108c523ffd2e419b7bb462d3f0ea44c1a0e8dd54",
+      "current_sha256": "5d6ac0c3b0c9c3a8c5fa5821108c523ffd2e419b7bb462d3f0ea44c1a0e8dd54",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/prompts-v02.md",
+      "destination": "skills/italian-pa-frontend/examples/prompts-v02.md",
+      "source_sha256": "5e371c740bb1605793242f5da21806b5ea403129289bacd311724b981f234688",
+      "current_sha256": "5e371c740bb1605793242f5da21806b5ea403129289bacd311724b981f234688",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/prompts-v03.md",
+      "destination": "skills/italian-pa-frontend/examples/prompts-v03.md",
+      "source_sha256": "34055ce2a4422cbbae676fd01e3d8b34807eb6f7e7d1697906dcfb86df088d3b",
+      "current_sha256": "34055ce2a4422cbbae676fd01e3d8b34807eb6f7e7d1697906dcfb86df088d3b",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/prompts-v04.md",
+      "destination": "skills/italian-pa-frontend/examples/prompts-v04.md",
+      "source_sha256": "c1cc2820ea5dd975e5bb484b48868ae0f97a44f571d65e50403feb4bddd109b7",
+      "current_sha256": "c1cc2820ea5dd975e5bb484b48868ae0f97a44f571d65e50403feb4bddd109b7",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/prompts-v08.md",
+      "destination": "skills/italian-pa-frontend/examples/prompts-v08.md",
+      "source_sha256": "4f71f5f63bc77ab47fbff4d5111849e68fb03f0fd8f045716c01be8824dba74c",
+      "current_sha256": "4f71f5f63bc77ab47fbff4d5111849e68fb03f0fd8f045716c01be8824dba74c",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/prompts-v09.md",
+      "destination": "skills/italian-pa-frontend/examples/prompts-v09.md",
+      "source_sha256": "c4efd75e8983018e6b494c6af25886f942b976d924b190584bf82049b0f1009f",
+      "current_sha256": "c4efd75e8983018e6b494c6af25886f942b976d924b190584bf82049b0f1009f",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/prompts.md",
+      "destination": "skills/italian-pa-frontend/examples/prompts.md",
+      "source_sha256": "f4361bc27ab0681948fed56228232394a88294ac24563722cb8fddc541f2042a",
+      "current_sha256": "f4361bc27ab0681948fed56228232394a88294ac24563722cb8fddc541f2042a",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/razor-form.cshtml",
+      "destination": "skills/italian-pa-frontend/examples/razor-form.cshtml",
+      "source_sha256": "c12523b003286e308de626d411b092c764d8b033116a3bf2cded11f2f8e9f9c4",
+      "current_sha256": "c12523b003286e308de626d411b092c764d8b033116a3bf2cded11f2f8e9f9c4",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/react-search-form.tsx",
+      "destination": "skills/italian-pa-frontend/examples/react-search-form.tsx",
+      "source_sha256": "e4ee7375b210986baff46522bf630568828f6316c32243978c9a83118e96632c",
+      "current_sha256": "e4ee7375b210986baff46522bf630568828f6316c32243978c9a83118e96632c",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/components/breadcrumb.html",
+      "destination": "skills/italian-pa-frontend/examples/components/breadcrumb.html",
+      "source_sha256": "e6a288dccf10e8eabe04791d4e8789069f1b38b4bb0ea62d80480479a7016267",
+      "current_sha256": "e6a288dccf10e8eabe04791d4e8789069f1b38b4bb0ea62d80480479a7016267",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/components/form-search.html",
+      "destination": "skills/italian-pa-frontend/examples/components/form-search.html",
+      "source_sha256": "da2e9e874a40dddc3b789d52a49be34bf15da52ddd4a0907973c2c76e13e930f",
+      "current_sha256": "da2e9e874a40dddc3b789d52a49be34bf15da52ddd4a0907973c2c76e13e930f",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/components/header.md",
+      "destination": "skills/italian-pa-frontend/examples/components/header.md",
+      "source_sha256": "d73799428105e995ea15273a0aea053e1bedec499de353354614a9955c4d704f",
+      "current_sha256": "d73799428105e995ea15273a0aea053e1bedec499de353354614a9955c4d704f",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/components/modal-confirm.html",
+      "destination": "skills/italian-pa-frontend/examples/components/modal-confirm.html",
+      "source_sha256": "5e9ba1890767a12f37837708b12a101a4c6d6b8d10cbdde542be95b6e17c171f",
+      "current_sha256": "5e9ba1890767a12f37837708b12a101a4c6d6b8d10cbdde542be95b6e17c171f",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/components/table.html",
+      "destination": "skills/italian-pa-frontend/examples/components/table.html",
+      "source_sha256": "8a4645df1fa3392299f31692c2641a3e8c4714f31afd25a384eb0fb1e4939ed2",
+      "current_sha256": "8a4645df1fa3392299f31692c2641a3e8c4714f31afd25a384eb0fb1e4939ed2",
+      "status": "preserved"
+    },
+    {
+      "source": "examples/components/wizard.html",
+      "destination": "skills/italian-pa-frontend/examples/components/wizard.html",
+      "source_sha256": "d920ed61b1c246034f4c9f3c720a0b8cd19e63c07c2400396aa9b15347f86a27",
+      "current_sha256": "d920ed61b1c246034f4c9f3c720a0b8cd19e63c07c2400396aa9b15347f86a27",
+      "status": "preserved"
+    },
+    {
+      "source": "references/acceptance-contracts.md",
+      "destination": "skills/italian-pa-frontend/references/acceptance-contracts.md",
+      "source_sha256": "b138f71b831ae8b60a4a2de1bc7e26e3f0e7f85b31e248f41aa23d6b7a0a88d5",
+      "current_sha256": "b138f71b831ae8b60a4a2de1bc7e26e3f0e7f85b31e248f41aa23d6b7a0a88d5",
+      "status": "preserved"
+    },
+    {
+      "source": "references/accessibility.md",
+      "destination": "skills/italian-pa-frontend/references/accessibility.md",
+      "source_sha256": "5133eae248c1eb25eb25eb1fa72e6615e3e5a5dc1dc7c04aa577ac48a65f1bdf",
+      "current_sha256": "5133eae248c1eb25eb25eb1fa72e6615e3e5a5dc1dc7c04aa577ac48a65f1bdf",
+      "status": "preserved"
+    },
+    {
+      "source": "references/administrative-data-views.md",
+      "destination": "skills/italian-pa-frontend/references/administrative-data-views.md",
+      "source_sha256": "aa9ea1ca8715de8cc809700a16cadfb07015cb814c68bdf0c1d0af4a69fa37dc",
+      "current_sha256": "aa9ea1ca8715de8cc809700a16cadfb07015cb814c68bdf0c1d0af4a69fa37dc",
+      "status": "preserved"
+    },
+    {
+      "source": "references/administrative-forms.md",
+      "destination": "skills/italian-pa-frontend/references/administrative-forms.md",
+      "source_sha256": "541b8bb7bcaf4c60370487436c8be1e46ee0913e96593728d6e17f4505ba65a8",
+      "current_sha256": "541b8bb7bcaf4c60370487436c8be1e46ee0913e96593728d6e17f4505ba65a8",
+      "status": "preserved"
+    },
+    {
+      "source": "references/administrative-wizards.md",
+      "destination": "skills/italian-pa-frontend/references/administrative-wizards.md",
+      "source_sha256": "0605428b2fb588a01466ce408837befe54a1f9f3e5f4069f694302f5cc317994",
+      "current_sha256": "0605428b2fb588a01466ce408837befe54a1f9f3e5f4069f694302f5cc317994",
+      "status": "preserved"
+    },
+    {
+      "source": "references/audit.md",
+      "destination": "skills/italian-pa-frontend/references/audit.md",
+      "source_sha256": "6328307b041ad6e6e9c02a77d5fb71042d6c4a2d420a1c931aea2b705ba6d43d",
+      "current_sha256": "6328307b041ad6e6e9c02a77d5fb71042d6c4a2d420a1c931aea2b705ba6d43d",
+      "status": "preserved"
+    },
+    {
+      "source": "references/browser-verification.md",
+      "destination": "skills/italian-pa-frontend/references/browser-verification.md",
+      "source_sha256": "6eea19dcef9751abcd819126d2494f1744b051aaaa99b50ea60a42e7c4c080a5",
+      "current_sha256": "6eea19dcef9751abcd819126d2494f1744b051aaaa99b50ea60a42e7c4c080a5",
+      "status": "preserved"
+    },
+    {
+      "source": "references/component-workflow.md",
+      "destination": "skills/italian-pa-frontend/references/component-workflow.md",
+      "source_sha256": "99381ebcd8100c99877f61b4a98210211e8356cde501bd19c5a84cb73efdacfd",
+      "current_sha256": "99381ebcd8100c99877f61b4a98210211e8356cde501bd19c5a84cb73efdacfd",
+      "status": "preserved"
+    },
+    {
+      "source": "references/design-rules.md",
+      "destination": "skills/italian-pa-frontend/references/design-rules.md",
+      "source_sha256": "4372ef7e536a4c8b24d8e65a5f4a4fe23b8d3488517b1cc245f348585836cb4c",
+      "current_sha256": "4372ef7e536a4c8b24d8e65a5f4a4fe23b8d3488517b1cc245f348585836cb4c",
+      "status": "preserved"
+    },
+    {
+      "source": "references/html-bootstrap.md",
+      "destination": "skills/italian-pa-frontend/references/html-bootstrap.md",
+      "source_sha256": "6f1730541709a0ff9f7ec04bef60ccf42a2452d154bd1d0e7b9e5c3886dc2aaf",
+      "current_sha256": "6f1730541709a0ff9f7ec04bef60ccf42a2452d154bd1d0e7b9e5c3886dc2aaf",
+      "status": "preserved"
+    },
+    {
+      "source": "references/iterative-review.md",
+      "destination": "skills/italian-pa-frontend/references/iterative-review.md",
+      "source_sha256": "5db14f74b070b8ffe2244324f37062856c7dac82edba9004828a51b82575399f",
+      "current_sha256": "5db14f74b070b8ffe2244324f37062856c7dac82edba9004828a51b82575399f",
+      "status": "preserved"
+    },
+    {
+      "source": "references/official-sources.md",
+      "destination": "skills/italian-pa-frontend/references/official-sources.md",
+      "source_sha256": "5bf89fca38192a43d112a5ffa8a48f4a0017de1bc37d137761b33a496343b6d1",
+      "current_sha256": "95cad72d36981269b716acdb35ee2089f5173729e48e9d6a4329a858a0f9428f",
+      "status": "adapted"
+    },
+    {
+      "source": "references/page-composition.md",
+      "destination": "skills/italian-pa-frontend/references/page-composition.md",
+      "source_sha256": "7ef914e21898c126d55ea5610db59cee3db4e8c0bc182558ddfb93d965df261b",
+      "current_sha256": "7ef914e21898c126d55ea5610db59cee3db4e8c0bc182558ddfb93d965df261b",
+      "status": "preserved"
+    },
+    {
+      "source": "references/pattern-reuse.md",
+      "destination": "skills/italian-pa-frontend/references/pattern-reuse.md",
+      "source_sha256": "3b39861460912d7dcb4d6181c9c3b56224003dd41512fbbd1176b59ca59d7abd",
+      "current_sha256": "3b39861460912d7dcb4d6181c9c3b56224003dd41512fbbd1176b59ca59d7abd",
+      "status": "preserved"
+    },
+    {
+      "source": "references/patterns.md",
+      "destination": "skills/italian-pa-frontend/references/patterns.md",
+      "source_sha256": "b268f8953f436891eaa99dfe57c0898bf9bed06cd9d2277d8a2397a98affa490",
+      "current_sha256": "b268f8953f436891eaa99dfe57c0898bf9bed06cd9d2277d8a2397a98affa490",
+      "status": "preserved"
+    },
+    {
+      "source": "references/razor-mvc.md",
+      "destination": "skills/italian-pa-frontend/references/razor-mvc.md",
+      "source_sha256": "6304f416d77a33ff8df895e7d70e7349adfcd55e66bd0d5b9d4222e6a2e4e05f",
+      "current_sha256": "6304f416d77a33ff8df895e7d70e7349adfcd55e66bd0d5b9d4222e6a2e4e05f",
+      "status": "preserved"
+    },
+    {
+      "source": "references/react-next.md",
+      "destination": "skills/italian-pa-frontend/references/react-next.md",
+      "source_sha256": "a1e61e67227bf137e4383425a2995d2805052768c792c029615701006cb9ec98",
+      "current_sha256": "a1e61e67227bf137e4383425a2995d2805052768c792c029615701006cb9ec98",
+      "status": "preserved"
+    },
+    {
+      "source": "references/technology-selection.md",
+      "destination": "skills/italian-pa-frontend/references/technology-selection.md",
+      "source_sha256": "1dea9718719d231eaa10d2b9e2bb4df935b3ead5728e0b62e35acce5ea0911ee",
+      "current_sha256": "1dea9718719d231eaa10d2b9e2bb4df935b3ead5728e0b62e35acce5ea0911ee",
+      "status": "preserved"
+    },
+    {
+      "source": "references/versioned-components.md",
+      "destination": "skills/italian-pa-frontend/references/versioned-components.md",
+      "source_sha256": "9750b75d7986ee3fce66edb5552c45256894a7441d32ec23872f86b72e24886d",
+      "current_sha256": "9750b75d7986ee3fce66edb5552c45256894a7441d32ec23872f86b72e24886d",
+      "status": "preserved"
+    },
+    {
+      "source": "references/visual-foundations.md",
+      "destination": "skills/italian-pa-frontend/references/visual-foundations.md",
+      "source_sha256": "0e94ebbc2539f2b5bb00a3c412091c14a247640a4a2551bfdf211b26e5fd2d68",
+      "current_sha256": "0e94ebbc2539f2b5bb00a3c412091c14a247640a4a2551bfdf211b26e5fd2d68",
+      "status": "preserved"
+    },
+    {
+      "source": "references/visual-review.md",
+      "destination": "skills/italian-pa-frontend/references/visual-review.md",
+      "source_sha256": "55c9bcaaf4b4fcc2eba368bd9f10eec260df01014299851cbfb0accd85ba9be6",
+      "current_sha256": "55c9bcaaf4b4fcc2eba368bd9f10eec260df01014299851cbfb0accd85ba9be6",
+      "status": "preserved"
+    },
+    {
+      "source": "references/components/forms.md",
+      "destination": "skills/italian-pa-frontend/references/components/forms.md",
+      "source_sha256": "3f7b019dc371334f115dce78ea4f9ae09309d6efad6c99cc28e38201e7bcf2bb",
+      "current_sha256": "3f7b019dc371334f115dce78ea4f9ae09309d6efad6c99cc28e38201e7bcf2bb",
+      "status": "preserved"
+    },
+    {
+      "source": "references/components/header.md",
+      "destination": "skills/italian-pa-frontend/references/components/header.md",
+      "source_sha256": "9cfae2c5af4212d1ebeb5bbd6b23801f8697f44b059f707f38c9d17fe2920f41",
+      "current_sha256": "9cfae2c5af4212d1ebeb5bbd6b23801f8697f44b059f707f38c9d17fe2920f41",
+      "status": "preserved"
+    },
+    {
+      "source": "references/components/modals.md",
+      "destination": "skills/italian-pa-frontend/references/components/modals.md",
+      "source_sha256": "ab7ddeb7534ed9dd4e66bd081e2c7edfc558fd059f1101fd98557e7c9381bd5e",
+      "current_sha256": "ab7ddeb7534ed9dd4e66bd081e2c7edfc558fd059f1101fd98557e7c9381bd5e",
+      "status": "preserved"
+    },
+    {
+      "source": "references/components/navigation.md",
+      "destination": "skills/italian-pa-frontend/references/components/navigation.md",
+      "source_sha256": "e9d65af9c81ba722a859f5da8f782797796301e8ad6582569b4e25f89eb4ee08",
+      "current_sha256": "e9d65af9c81ba722a859f5da8f782797796301e8ad6582569b4e25f89eb4ee08",
+      "status": "preserved"
+    },
+    {
+      "source": "references/components/README.md",
+      "destination": "skills/italian-pa-frontend/references/components/README.md",
+      "source_sha256": "83085be73a210b70fcf178979730c7f1be0164749f8bab36769d62127f40c469",
+      "current_sha256": "83085be73a210b70fcf178979730c7f1be0164749f8bab36769d62127f40c469",
+      "status": "preserved"
+    },
+    {
+      "source": "references/components/steppers.md",
+      "destination": "skills/italian-pa-frontend/references/components/steppers.md",
+      "source_sha256": "0687f0ee0e840c74aade678c930632cc34a6d7c63b2deaafad782a58fe91e112",
+      "current_sha256": "0687f0ee0e840c74aade678c930632cc34a6d7c63b2deaafad782a58fe91e112",
+      "status": "preserved"
+    },
+    {
+      "source": "references/components/tables.md",
+      "destination": "skills/italian-pa-frontend/references/components/tables.md",
+      "source_sha256": "a0c075050fa480b970122579354d59f6aa0174f10105f96eba4feedb04f3e7e6",
+      "current_sha256": "a0c075050fa480b970122579354d59f6aa0174f10105f96eba4feedb04f3e7e6",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/component_lookup.py",
+      "destination": "skills/italian-pa-frontend/scripts/component_lookup.py",
+      "source_sha256": "fa23ada1cdd761f8ea9ac4b98b0e446f6ca400e30d133ac7e4c1b27622fcdd63",
+      "current_sha256": "fa23ada1cdd761f8ea9ac4b98b0e446f6ca400e30d133ac7e4c1b27622fcdd63",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/detect_stack.py",
+      "destination": "skills/italian-pa-frontend/scripts/detect_stack.py",
+      "source_sha256": "9c1aa2660d16ece4df0907e845bd1bb1d1f4498c9158ec6646ed9ddca10dbb2f",
+      "current_sha256": "9c1aa2660d16ece4df0907e845bd1bb1d1f4498c9158ec6646ed9ddca10dbb2f",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/discover_ui_patterns.py",
+      "destination": "skills/italian-pa-frontend/scripts/discover_ui_patterns.py",
+      "source_sha256": "fae02e7ece9f84af19159831c4c0d2e79e5a7357e7aad9188dfca14105194317",
+      "current_sha256": "fae02e7ece9f84af19159831c4c0d2e79e5a7357e7aad9188dfca14105194317",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/install.ps1",
+      "destination": "skills/italian-pa-frontend/scripts/install.ps1",
+      "source_sha256": "2e197465754efd14634718624d77d63c70f116abf41232431224105fd02bec85",
+      "current_sha256": "5514c50d7f0d3b4a3fec668022bf74a57d0cc6705c08f53ae9ef5a14866884ff",
+      "status": "adapted"
+    },
+    {
+      "source": "scripts/install.sh",
+      "destination": "skills/italian-pa-frontend/scripts/install.sh",
+      "source_sha256": "a5a4f2c972729493eaa368f8a86ce4f3c6e7d0f444bf1b652c39b3633f52c603",
+      "current_sha256": "803349581fdb8564db0d4ce864e9799f6ca71e9cdd5322f0bf62174b6d01b37c",
+      "status": "adapted"
+    },
+    {
+      "source": "scripts/pa_audit.py",
+      "destination": "skills/italian-pa-frontend/scripts/pa_audit.py",
+      "source_sha256": "d8b4d20888f38f677602a1d02e21d0c03840544f3cc7068cda4bde8db2336e7a",
+      "current_sha256": "d8b4d20888f38f677602a1d02e21d0c03840544f3cc7068cda4bde8db2336e7a",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/release_check.py",
+      "destination": "skills/italian-pa-frontend/scripts/release_check.py",
+      "source_sha256": "135a19b44ab28f8a159ac3a024554e39ed792e8f0d3c60d0d95c9cdc4e47fc0e",
+      "current_sha256": "135a19b44ab28f8a159ac3a024554e39ed792e8f0d3c60d0d95c9cdc4e47fc0e",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/validate_administrative_flow.py",
+      "destination": "skills/italian-pa-frontend/scripts/validate_administrative_flow.py",
+      "source_sha256": "3017210f18c18e99cdac1ed37618f5ebe47282a3776e1a8b3b6d2b9ff6786645",
+      "current_sha256": "3017210f18c18e99cdac1ed37618f5ebe47282a3776e1a8b3b6d2b9ff6786645",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/validate_data_view.py",
+      "destination": "skills/italian-pa-frontend/scripts/validate_data_view.py",
+      "source_sha256": "944bf2406f31f03b80286d3d937a033d7b8dbaa2c7a4a97541c067bdf0529699",
+      "current_sha256": "944bf2406f31f03b80286d3d937a033d7b8dbaa2c7a4a97541c067bdf0529699",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/validate_skill.py",
+      "destination": "skills/italian-pa-frontend/scripts/validate_skill.py",
+      "source_sha256": "1027ef269fab2938b7b7d79524e271aaee03eb9bd78cf9dc149e242c5345b9ac",
+      "current_sha256": "82531baf56be63b2507ebb38704dc1f68ed4b234708527bbd35f2e6428ebac2a",
+      "status": "adapted"
+    },
+    {
+      "source": "scripts/validate_ui_spec.py",
+      "destination": "skills/italian-pa-frontend/scripts/validate_ui_spec.py",
+      "source_sha256": "8779237065ae1db68f7fa3c02ddae86bdce902e92f5626afcf823899a2914d31",
+      "current_sha256": "8779237065ae1db68f7fa3c02ddae86bdce902e92f5626afcf823899a2914d31",
+      "status": "preserved"
+    },
+    {
+      "source": "scripts/version_lookup.py",
+      "destination": "skills/italian-pa-frontend/scripts/version_lookup.py",
+      "source_sha256": "bdfaaee2a4c0da2796be2791dd7dd2d8ce5a3c4a60924bc183d0f0f864d80dba",
+      "current_sha256": "bdfaaee2a4c0da2796be2791dd7dd2d8ce5a3c4a60924bc183d0f0f864d80dba",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/administrative-flow.example.json",
+      "destination": "skills/italian-pa-frontend/templates/administrative-flow.example.json",
+      "source_sha256": "72d6d4258a24dfb8f38246f20ca7b6aab76fca828708b4665aea1dce3c8582f8",
+      "current_sha256": "72d6d4258a24dfb8f38246f20ca7b6aab76fca828708b4665aea1dce3c8582f8",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/audit-report.md",
+      "destination": "skills/italian-pa-frontend/templates/audit-report.md",
+      "source_sha256": "6bf10b89794db9013e8d0328f6acee5fab25430ee61a8fe89aae8af153090921",
+      "current_sha256": "6bf10b89794db9013e8d0328f6acee5fab25430ee61a8fe89aae8af153090921",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/data-view.example.json",
+      "destination": "skills/italian-pa-frontend/templates/data-view.example.json",
+      "source_sha256": "fe73a3d97871c3bf7582e3cc90b7fdbccb2e94e9b95e6ad8df66337c61f2ae50",
+      "current_sha256": "fe73a3d97871c3bf7582e3cc90b7fdbccb2e94e9b95e6ad8df66337c61f2ae50",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/implementation-report.md",
+      "destination": "skills/italian-pa-frontend/templates/implementation-report.md",
+      "source_sha256": "72930f2688dc6831d25fe119b0291ca9b56665c14b69863e2e294dca022cf999",
+      "current_sha256": "72930f2688dc6831d25fe119b0291ca9b56665c14b69863e2e294dca022cf999",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/iteration-review-report.md",
+      "destination": "skills/italian-pa-frontend/templates/iteration-review-report.md",
+      "source_sha256": "d197ef2bc67147125291484b90c7d63398fd2d089a99762c829ed7f53c5f8724",
+      "current_sha256": "d197ef2bc67147125291484b90c7d63398fd2d089a99762c829ed7f53c5f8724",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/technology-decision.md",
+      "destination": "skills/italian-pa-frontend/templates/technology-decision.md",
+      "source_sha256": "5686523f99abd23f34f30b175d2b52675e00e98d119ba4f22dc69ccc3c18362e",
+      "current_sha256": "5686523f99abd23f34f30b175d2b52675e00e98d119ba4f22dc69ccc3c18362e",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/ui-quality-spec.example.json",
+      "destination": "skills/italian-pa-frontend/templates/ui-quality-spec.example.json",
+      "source_sha256": "6c859d153a772170be36b7326d27ecbaabf2dccd6b31a3a092fe3d4a21a714e7",
+      "current_sha256": "6c859d153a772170be36b7326d27ecbaabf2dccd6b31a3a092fe3d4a21a714e7",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/ui-spec.md",
+      "destination": "skills/italian-pa-frontend/templates/ui-spec.md",
+      "source_sha256": "5aa97d37bac18f1ed5cf09afa5b132fde20c1d1f8239c6d876362c732d2ec792",
+      "current_sha256": "5aa97d37bac18f1ed5cf09afa5b132fde20c1d1f8239c6d876362c732d2ec792",
+      "status": "preserved"
+    },
+    {
+      "source": "templates/visual-review-report.md",
+      "destination": "skills/italian-pa-frontend/templates/visual-review-report.md",
+      "source_sha256": "2f03022721f613d066da3201e11ddff4936765612309ac5da55bcc950b797d67",
+      "current_sha256": "2f03022721f613d066da3201e11ddff4936765612309ac5da55bcc950b797d67",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_administrative_data_view.py",
+      "destination": "skills/italian-pa-frontend/tests/test_administrative_data_view.py",
+      "source_sha256": "3d117cc266d8744d77e3769853fcce2930d5203a57abba6d8b3be2639343de31",
+      "current_sha256": "3d117cc266d8744d77e3769853fcce2930d5203a57abba6d8b3be2639343de31",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_administrative_flow.py",
+      "destination": "skills/italian-pa-frontend/tests/test_administrative_flow.py",
+      "source_sha256": "329e174b9ef8c42fdaa4a7b0d09d1723e1903ecaa33803f43ef22ddba170133a",
+      "current_sha256": "329e174b9ef8c42fdaa4a7b0d09d1723e1903ecaa33803f43ef22ddba170133a",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_component_catalog.py",
+      "destination": "skills/italian-pa-frontend/tests/test_component_catalog.py",
+      "source_sha256": "8bd5aec01a786549a7cd5e45ad2f7485e56941f2c5a02dede6fd9c2fab0ccde1",
+      "current_sha256": "8bd5aec01a786549a7cd5e45ad2f7485e56941f2c5a02dede6fd9c2fab0ccde1",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_pa_audit.py",
+      "destination": "skills/italian-pa-frontend/tests/test_pa_audit.py",
+      "source_sha256": "0eabcb279c6fe571831adf238c9ff2149ce2101034fc4a77ead91cc1d5b03cfd",
+      "current_sha256": "0eabcb279c6fe571831adf238c9ff2149ce2101034fc4a77ead91cc1d5b03cfd",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_stack_detection.py",
+      "destination": "skills/italian-pa-frontend/tests/test_stack_detection.py",
+      "source_sha256": "da319b2d3f99879bafe610ea53c9e7fd317e8341dc87672ce2aceeff41376894",
+      "current_sha256": "da319b2d3f99879bafe610ea53c9e7fd317e8341dc87672ce2aceeff41376894",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_technology_selection.py",
+      "destination": "skills/italian-pa-frontend/tests/test_technology_selection.py",
+      "source_sha256": "59053ad0d374c82e0db76f087237bb9d6526d62d9034ddede027bd0770e2a0b6",
+      "current_sha256": "59053ad0d374c82e0db76f087237bb9d6526d62d9034ddede027bd0770e2a0b6",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_ui_quality_spec.py",
+      "destination": "skills/italian-pa-frontend/tests/test_ui_quality_spec.py",
+      "source_sha256": "c9e2c6d51d006f029df0d236c2e706a308a095376342950b57302015ed5170e7",
+      "current_sha256": "c9e2c6d51d006f029df0d236c2e706a308a095376342950b57302015ed5170e7",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/test_version_rules.py",
+      "destination": "skills/italian-pa-frontend/tests/test_version_rules.py",
+      "source_sha256": "7a2c38fc290abb032a201d20d303d4baffeae710892d47696b2e04dbe3988c40",
+      "current_sha256": "7a2c38fc290abb032a201d20d303d4baffeae710892d47696b2e04dbe3988c40",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/fixtures/sample_bad.html",
+      "destination": "skills/italian-pa-frontend/tests/fixtures/sample_bad.html",
+      "source_sha256": "f63dfbda573431bf459358674e0ddc614aef750d62862d64b3e4223f92f2684c",
+      "current_sha256": "f63dfbda573431bf459358674e0ddc614aef750d62862d64b3e4223f92f2684c",
+      "status": "preserved"
+    },
+    {
+      "source": "tests/fixtures/sample_good.html",
+      "destination": "skills/italian-pa-frontend/tests/fixtures/sample_good.html",
+      "source_sha256": "6501b49449754c58a43815ce39d06c47f6d3368ffd2b2598a872f4b6f1b2d428",
+      "current_sha256": "6501b49449754c58a43815ce39d06c47f6d3368ffd2b2598a872f4b6f1b2d428",
+      "status": "preserved"
+    }
+  ],
+  "created_files": [
+    ".editorconfig",
+    ".gitattributes",
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/improvement.yml",
+    ".github/ISSUE_TEMPLATE/skill_proposal.yml",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".github/dependabot.yml",
+    ".github/workflows/links.yml",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "README.md",
+    "RELEASE_NOTES.md",
+    "ROADMAP.md",
+    "SECURITY.md",
+    "docs/README.it.md",
+    "docs/README.md",
+    "docs/architecture.md",
+    "docs/assets/social-preview.png",
+    "docs/assets/social-preview.svg",
+    "docs/contributing-skills.md",
+    "docs/github-metadata.json",
+    "docs/installation.md",
+    "docs/migration-inventory.json",
+    "docs/migration.md",
+    "docs/publication.md",
+    "docs/release-readiness.md",
+    "docs/seo.md",
+    "docs/sources.md",
+    "docs/verification.md",
+    "scripts/browser_smoke.py",
+    "scripts/check_links.py",
+    "scripts/install.ps1",
+    "scripts/install.py",
+    "scripts/install.sh",
+    "scripts/package_release.py",
+    "scripts/release_check.py",
+    "scripts/test_install_wrappers.py",
+    "scripts/validate_suite.py",
+    "skills/italian-pa-frontend/LICENSE",
+    "skills/italian-pa-frontend/browser-tests/package-lock.json",
+    "skills/italian-pa-frontend/scripts/install.py",
+    "skills/italian-pa-frontend/tests/test_skill_packaging.py",
+    "suite.json",
+    "tests/browser-smoke/index.html",
+    "tests/test_installation.py",
+    "tests/test_release.py"
+  ]
+}

@@ -1,0 +1,19 @@
+<!-- Bootstrap Italia 2.x: richiede JS del kit caricato dalla app; esempio non autonomo. -->
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+        data-bs-target="#dialogConferma">Mostra conferma</button>
+<div class="modal fade" id="dialogConferma" tabindex="-1" role="dialog"
+     aria-labelledby="dialogTitolo" aria-describedby="dialogDescrizione">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="dialogTitolo">Confermi l'operazione?</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body"><p id="dialogDescrizione">Questa è soltanto una dimostrazione di interazione.</p></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+        <!-- L'azione effettiva DEVE essere collegata al backend reale; non simulare salvataggio. -->
+      </div>
+    </div>
+  </div>
+</div>

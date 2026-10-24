@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "catalog_version": "0.2.0",
+  "checked_on": "2026-10-22",
+  "design_system": "Bootstrap Italia 2.x",
+  "baseline_note": "Documentazione web corrente consultata, NON testato ogni snippet con libreria o browser; la versione del progetto prevale.",
+  "official_reference": "https://designers.italia.it/design-system/come-iniziare/per-sviluppatori/",
+  "components": [
+    {
+      "id": "header",
+      "name": "Header istituzionale",
+      "status": "documented-not-runtime-verified",
+      "documentation_url": "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/",
+      "additional_sources": [
+        "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/"
+      ],
+      "doc": "references/components/header.md",
+      "example": "examples/components/header.md",
+      "known_css_classes": [
+        "it-header-wrapper",
+        "it-header-slim-wrapper",
+        "it-header-center-wrapper",
+        "it-header-navbar-wrapper"
+      ],
+      "checks": [
+        "Controllare struttura slim/center/nav e identità reale dell’ente.",
+        "Per mobile e forte ingrandimento sulla linea >=2.15.0 partire dall’esempio ufficiale con comportamento dialog/focus-trap; NON ricostruire il menu con un semplice toggle CSS.",
+        "Fornire skip link, nome accessibile e gestione tastiera; testare zoom e screen reader."
+      ],
+      "version_notes": "2.15.0: navbar mobile/zoom reimplementata come dialog con backdrop; verificare modifiche a CSS/JS personalizzati.",
+      "adapters": [
+        "html-bootstrap",
+        "razor-mvc",
+        "react-next"
+      ]
+    },
+    {
+      "id": "navigation",
+      "name": "Navigazione e breadcrumb",
+      "status": "documented-not-runtime-verified",
+      "documentation_url": "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/breadcrumbs/",
+      "additional_sources": [
+        "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/breadcrumbs/",
+        "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/sidebar/",
+        "https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/megamenu/"
+      ],
+      "doc": "references/components/navigation.md",
+      "example": "examples/components/breadcrumb.html",
+      "known_css_classes": [
+        "breadcrumb-container",
+        "breadcrumb",
+        "breadcrumb-item"
+      ],
+      "checks": [
+        "Navigazione primaria e breadcrumb sono due pattern distinti; non sostituire l’uno con l’altro.",
+        "Breadcrumb con nav etichettato, lista ordinata e aria-current=page sulla voce attiva.",
+        "Per sidebar/megamenu usare codice ufficiale della versione e testare aria-expanded/focus."
+      ],
+      "version_notes": "2.8.0: varie modifiche a markup dropdown e megamenu; 2.15.0: comportamento mobile dialog.",
+      "adapters": [
+        "html-bootstrap",
+        "razor-mvc",
+        "react-next"
+      ]
+    },
+    {
+      "id": "forms",
+      "name": "Form, input e select",
+      "status": "documented-not-runtime-verified",
+      "documentation_url": "https://italia.github.io/bootstrap-italia/docs/form/input/",
+      "additional_sources": [
+        "https://italia.github.io/bootstrap-italia/docs/form/input/",
+        "https://italia.github.io/bootstrap-italia/docs/form/select/"
+      ],
+      "doc": "references/components/forms.md",
+      "example": "examples/components/form-search.html",
+      "known_css_classes": [
+        "form-group",
+        "form-control",
+        "form-text",
+        "select-wrapper"
+      ],
+      "checks": [
+        "Ogni controllo ha label associata, istruzioni collegate, errori espressi nel testo.",
+        "Form-control sugli input pertinenti, secondo documentazione >=2.11.0.",
+        "Quando l’input con label flottante ha placeholder o valore, verificare stato active della label.",
+        "Validazione lato server e protezioni CSRF invariate."
+      ],
+      "version_notes": "2.2.0: label active con placeholder/valore; 2.11.0: form-control sugli input pertinenti.",
+      "adapters": [
+        "html-bootstrap",
+        "razor-mvc",
+        "react-next"
+      ]
+    },
+    {
+      "id": "tables",
+      "name": "Tabelle dati",
+      "status": "documented-not-runtime-verified",
+      "documentation_url": "https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tabelle/",
+      "additional_sources": [
+        "https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tabelle/"
+      ],
+      "doc": "references/components/tables.md",
+      "example": "examples/components/table.html",
+      "known_css_classes": [
+        "table",
+        "table-responsive"
+      ],
+      "checks": [
+        "Usare caption o titolo contestuale e intestazioni th scope=col.",
+        "Per scorrimento orizzontale, valutare div .table-responsive e un nome/descrizione del contesto; controllare a zoom 400%.",
+        "Distinguere ordinamento, filtro e paginazione; non implementare interazione fasulla.",
+        "Le azioni di riga devono avere nomi accessibili distintivi."
+      ],
+      "version_notes": "Tabelle responsive con overflow possono tagliare dropdown/popover: testare o spostare overlay fuori dallo scroll container.",
+      "adapters": [
+        "html-bootstrap",
+        "razor-mvc",
+        "react-next"
+      ]
+    },
+    {
+      "id": "modals",
+      "name": "Dialog e modali",
+      "status": "documented-not-runtime-verified",
+      "documentation_url": "https://italia.github.io/bootstrap-italia/docs/componenti/modale/",
+      "additional_sources": [
+        "https://italia.github.io/bootstrap-italia/docs/componenti/modale/"
+      ],
+      "doc": "references/components/modals.md",
+      "example": "examples/components/modal-confirm.html",
+      "known_css_classes": [
+        "modal",
+        "modal-dialog",
+        "modal-content",
+        "modal-header",
+        "modal-body",
+        "modal-footer"
+      ],
+      "checks": [
+        "Usare attributi aria-labelledby o aria-label, e preferire etichetta visibile.",
+        "Usare il componente JavaScript ufficiale con data-bs-toggle e data-bs-target oppure API programmata, mai inizializzazioni doppie.",
+        "Verificare focus iniziale, trap, Esc, uscita e ripristino focus sull’elemento attivatore.",
+        "Per azioni distruttive la conferma esplicita non deve compromettere la possibilità di annullare."
+      ],
+      "version_notes": "La documentazione Bootstrap Italia descrive role=dialog su .modal e role=document su .modal-dialog; seguire documentazione della versione.",
+      "adapters": [
+        "html-bootstrap",
+        "razor-mvc",
+        "react-next"
+      ]
+    },
+    {
+      "id": "steppers",
+      "name": "Wizard e steppers",
+      "status": "documented-not-runtime-verified",
+      "documentation_url": "https://italia.github.io/bootstrap-italia/docs/componenti/steppers/",
+      "additional_sources": [
+        "https://italia.github.io/bootstrap-italia/docs/componenti/steppers/"
+      ],
+      "doc": "references/components/steppers.md",
+      "example": "examples/components/wizard.html",
+      "known_css_classes": [
+        "steppers",
+        "steppers-nav",
+        "steppers-content",
+        "steppers-btn-prev",
+        "steppers-btn-next"
+      ],
+      "checks": [
+        "Intestazione .steppers e lista degli step; active/confirmed non devono essere unico segnale di stato.",
+        "Nei flussi SPA/AJAX usare aria-live=polite sul contenitore contenuti e gestire focus dopo lo step.",
+        "I pulsanti Avanti/Indietro sono azioni: non usare link se non si naviga a una risorsa.",
+        "Salva bozza, validazione per step e recupero dati dipendono da backend reale, non sono forniti dal CSS."
+      ],
+      "version_notes": "2.3.0: .steppers-index fuori dalla lista; 2.13.0: SVG decorative con aria-hidden=true.",
+      "adapters": [
+        "html-bootstrap",
+        "razor-mvc",
+        "react-next"
+      ]
+    }
+  ]
+}

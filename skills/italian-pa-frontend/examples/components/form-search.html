@@ -1,0 +1,19 @@
+<!-- GET dimostrativo; collegare al reale endpoint del progetto e validare lato server. -->
+<form action="/candidature" method="get" role="search" aria-label="Filtra le candidature">
+  <div class="form-group">
+    <label for="ricercaTitolo">Titolo o codice candidatura</label>
+    <input class="form-control" type="search" id="ricercaTitolo" name="q"
+           aria-describedby="ricercaAiuto" autocomplete="off">
+    <small id="ricercaAiuto" class="form-text">Inserisci parte del titolo oppure il codice.</small>
+  </div>
+  <div class="select-wrapper">
+    <label for="filtroStato">Stato</label>
+    <select id="filtroStato" name="stato">
+      <option value="">Tutti</option>
+      <option value="aperta">Aperta</option>
+      <option value="chiusa">Chiusa</option>
+    </select>
+  </div>
+  <button class="btn btn-primary" type="submit">Cerca</button>
+  <a href="/candidature">Cancella filtri</a>
+</form>

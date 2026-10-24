@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Skills Italia browser harness fixture</title>
+  <style>
+    body { font: 1rem/1.5 system-ui,sans-serif; margin: 1.25rem; color: #172c3c; background: #fff; }
+    main { max-width: 60rem; margin: auto; }
+    button,input { font: inherit; padding: .65rem; margin: .25rem; max-width: 100%; box-sizing: border-box; }
+    button { color: #fff; background: #17496a; border: 2px solid #17496a; cursor: pointer; }
+    :focus-visible { outline: 3px solid #a34700; outline-offset: 3px; }
+    section { margin-block: 2rem; }
+    table { border-collapse: collapse; width: 100%; }
+    td,th { border: 1px solid #526574; padding: .5rem; text-align: left; }
+    dialog { max-width: calc(100vw - 5rem); color: #172c3c; }
+    [hidden] { display: none; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Browser harness fixture</h1>
+  <p>Synthetic developer test data. This page is not a public service or a design-system example.</p>
+  <section aria-labelledby="dialogs-title">
+    <h2 id="dialogs-title">Dialog contracts</h2>
+    <button id="menu-open" type="button">Open navigation</button>
+    <dialog id="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">Navigation fixture</h2>
+      <button id="menu-close" type="button">Close navigation</button>
+    </dialog>
+    <button id="modal-open" type="button">Open confirmation</button>
+    <dialog id="modal" aria-labelledby="modal-title">
+      <h2 id="modal-title">Confirmation fixture</h2>
+      <p>No data is submitted or changed.</p>
+      <button id="modal-close" type="button">Cancel</button>
+    </dialog>
+  </section>
+  <section aria-labelledby="form-title">
+    <h2 id="form-title">Validation contract</h2>
+    <form id="form" novalidate>
+      <label for="name">Name (required)</label>
+      <input id="name" name="name" required aria-describedby="form-error">
+      <button id="submit" type="submit">Validate example</button>
+      <p id="form-error" role="alert" hidden>Enter a name to continue.</p>
+    </form>
+  </section>
+  <section aria-labelledby="table-title">
+    <h2 id="table-title">Data table contract</h2>
+    <table id="table"><caption>Synthetic items</caption>
+      <thead><tr><th scope="col">Item</th><th scope="col">State</th></tr></thead>
+      <tbody><tr><td>Example A</td><td>Draft</td></tr></tbody>
+    </table>
+  </section>
+  <section aria-labelledby="wizard-title">
+    <h2 id="wizard-title">Wizard contract</h2>
+    <p id="step" aria-live="polite">Step 1 of 2</p>
+    <button id="previous" type="button">Previous step</button>
+    <button id="next" type="button">Next step</button>
+  </section>
+</main>
+<script>
+  for (const name of ['menu','modal']) {
+    const dialog = document.getElementById(name);
+    document.getElementById(name + '-open').addEventListener('click', () => dialog.showModal());
+    document.getElementById(name + '-close').addEventListener('click', () => dialog.close());
+  }
+  document.getElementById('form').addEventListener('submit', event => {
+    event.preventDefault();
+    const invalid = !document.getElementById('name').value.trim();
+    document.getElementById('form-error').hidden = !invalid;
+    document.getElementById('name').setAttribute('aria-invalid', String(invalid));
+  });
+  document.getElementById('next').addEventListener('click', () => { document.getElementById('step').textContent = 'Step 2 of 2'; });
+  document.getElementById('previous').addEventListener('click', () => { document.getElementById('step').textContent = 'Step 1 of 2'; });
+</script>
+</body>
+</html>

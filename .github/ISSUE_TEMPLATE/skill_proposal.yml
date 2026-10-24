@@ -1,0 +1,33 @@
+name: Skill proposal / Nuova skill
+description: Propose a focused independent skill without presenting it as available.
+body:
+  - type: markdown
+    attributes:
+      value: Read docs/contributing-skills.md and ROADMAP.md first. A proposal is not an implemented or installable module.
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem and realistic requests
+      description: Explain why a distinct module is useful and how it differs from the available frontend skill.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope, exclusions and official sources
+      description: Include relevant specifications, versions, specialist review and independence from other skills.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Verification and maintenance plan
+      description: Tests, safe fixtures, compatibility, licensing, maintainers and evidence needed before availability.
+    validations:
+      required: true

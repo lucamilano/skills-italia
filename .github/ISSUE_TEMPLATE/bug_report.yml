@@ -1,0 +1,27 @@
+name: Bug report / Segnalazione
+description: Report a reproducible issue in a skill, installer or documentation.
+body:
+  - type: markdown
+    attributes:
+      value: Please use private vulnerability reporting for security issues. Do not include secrets, personal data or production sessions. English and Italian are welcome.
+  - type: input
+    id: module
+    attributes:
+      label: Module and version
+      description: Suite version and affected skill/tool version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and actual behavior
+      description: Minimal synthetic example, commands, OS, Python/Node and agent versions where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior and evidence
+      description: Include applicable official documentation, versions and checks actually run.
+    validations:
+      required: true

@@ -1,0 +1,81 @@
+{
+  "view": "administrative-list",
+  "title": "Elenco pratiche (esempio dimostrativo)",
+  "data_source": {
+    "status": "unresolved",
+    "endpoint": null,
+    "scope": "server",
+    "total_count": "unknown"
+  },
+  "columns": [
+    {
+      "id": "code",
+      "label": "Codice pratica",
+      "sortable": true
+    },
+    {
+      "id": "status",
+      "label": "Stato",
+      "sortable": false
+    }
+  ],
+  "search": {
+    "enabled": true,
+    "scope": "entire_dataset"
+  },
+  "filters": [
+    {
+      "id": "status",
+      "label": "Stato",
+      "type": "select"
+    }
+  ],
+  "sorting": {
+    "enabled": true,
+    "allowed_fields": [
+      "code"
+    ],
+    "default": {
+      "field": "code",
+      "direction": "asc"
+    }
+  },
+  "pagination": {
+    "mode": "server",
+    "page_size": 20
+  },
+  "export": {
+    "enabled": false,
+    "scope": "none",
+    "authorized_backend": false
+  },
+  "actions": [
+    {
+      "id": "details",
+      "label": "Dettaglio",
+      "requires_permission": "practices.read",
+      "backend_enforced": false
+    }
+  ],
+  "states": [
+    "loading",
+    "empty",
+    "no-results",
+    "error",
+    "ready",
+    "forbidden"
+  ],
+  "responsive_strategy": "scroll-without-information-loss",
+  "accessibility_tests": [
+    "keyboard",
+    "focus",
+    "caption",
+    "table-headers",
+    "live-status"
+  ],
+  "acceptance_tests": [
+    "sorting-preserves-filter",
+    "pagination-preserves-sort",
+    "server-authorizes-actions"
+  ]
+}

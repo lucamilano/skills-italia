@@ -1,0 +1,42 @@
+{
+  "screen": "Elenco candidature - dimostrazione",
+  "purpose": "Ricercare e consultare candidature",
+  "technology": {
+    "source": "repository",
+    "name": "stack verificato nel progetto",
+    "design_system_version": "da verificare"
+  },
+  "layout": {
+    "primary_action": "Nuova candidatura",
+    "content_order": [
+      "breadcrumb",
+      "heading",
+      "filters",
+      "results",
+      "pagination"
+    ],
+    "viewports": [
+      320,
+      375,
+      768,
+      1280
+    ]
+  },
+  "states": [
+    "loading",
+    "empty",
+    "error",
+    "success"
+  ],
+  "components": [
+    "navigation",
+    "forms",
+    "tables"
+  ],
+  "validation": {
+    "keyboard": false,
+    "zoom_reflow": false,
+    "contrast": false,
+    "manual_review": false
+  }
+}

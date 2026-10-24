@@ -1,0 +1,23 @@
+{
+  "name": "skills-italia",
+  "display_name": "Skills Italia",
+  "description": "Open-source AI agent skills for Italian Public Administration: accessible frontends, design systems, security, interoperability and digital services.",
+  "homepage": null,
+  "topics": [
+    "agent-skills",
+    "claude-code",
+    "openai-codex",
+    "public-administration",
+    "italian-public-administration",
+    "design-italia",
+    "bootstrap-italia",
+    "designers-italia",
+    "accessibility",
+    "open-source"
+  ],
+  "social_preview": "docs/assets/social-preview.png",
+  "release_title": "Skills Italia — Initial Public Release",
+  "release_notes": "RELEASE_NOTES.md",
+  "suggested_suite_tag": "v0.1.0",
+  "repository_url": "https://github.com/lucamilano/skills-italia"
+}

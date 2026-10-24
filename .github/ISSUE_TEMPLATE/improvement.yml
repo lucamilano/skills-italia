@@ -1,0 +1,16 @@
+name: Improvement / Miglioramento
+description: Suggest a focused improvement to an existing available module or the suite.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and affected workflow
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior, sources and acceptance checks
+      description: Keep future integrations clearly identified as proposals.
+    validations:
+      required: true

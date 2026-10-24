@@ -1,0 +1,12 @@
+@* ESEMPIO DIDATTICO, non componente Bootstrap Italia pronto.
+   Presuppone un PageModel/ViewModel con Input.Nome e validation infrastructure configurata. *@
+<form method="post">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" role="alert"></div>
+    <div>
+        <label asp-for="Input.Nome"></label>
+        <input asp-for="Input.Nome" autocomplete="name" />
+        <span asp-validation-for="Input.Nome"></span>
+    </div>
+    <button type="submit">Salva</button>
+</form>

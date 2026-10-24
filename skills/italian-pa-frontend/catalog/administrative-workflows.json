@@ -1,0 +1,79 @@
+{
+  "$schema_hint": "Internal v0.8 contract catalog, not a JSON Schema standard",
+  "version": "0.8.0",
+  "workflows": [
+    {
+      "id": "administrative-form",
+      "description": "Data collection and validation independent of technology",
+      "required_ui_states": [
+        "editing",
+        "validating",
+        "invalid",
+        "submitting",
+        "submitted",
+        "error"
+      ],
+      "conditional_features": [
+        "draft",
+        "attachments"
+      ],
+      "references": [
+        "references/administrative-forms.md"
+      ]
+    },
+    {
+      "id": "administrative-wizard",
+      "description": "Multi-step form, optional save, upload, review and submit",
+      "required_ui_states": [
+        "editing",
+        "validating",
+        "invalid",
+        "submitting",
+        "submitted",
+        "error"
+      ],
+      "conditional_features": [
+        "draft",
+        "attachments"
+      ],
+      "references": [
+        "references/administrative-wizards.md"
+      ]
+    }
+  ],
+  "features": {
+    "draft": {
+      "needs_backend": true,
+      "required_states": [
+        "saving",
+        "saved",
+        "save-error"
+      ],
+      "questions": [
+        "Where are drafts stored?",
+        "What are user permissions and retention rules?",
+        "How are concurrent edits handled?"
+      ]
+    },
+    "attachments": {
+      "needs_backend": true,
+      "required_states": [
+        "selected",
+        "uploading",
+        "uploaded",
+        "rejected",
+        "failed"
+      ],
+      "questions": [
+        "Which MIME types/limits are accepted?",
+        "Where and how are files uploaded?",
+        "How is a file removed or replaced?"
+      ]
+    }
+  },
+  "official_sources": [
+    "https://designers.italia.it/design-system/componenti/form/",
+    "https://italia.github.io/bootstrap-italia/docs/componenti/steppers/",
+    "https://italia.github.io/bootstrap-italia/docs/form/upload/"
+  ]
+}

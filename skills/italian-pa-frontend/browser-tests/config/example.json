@@ -1,0 +1,35 @@
+{
+  "baseURL": "http://127.0.0.1:5000",
+  "pages": ["/", "/candidature"],
+  "components": {
+    "menu": {
+      "path": "/",
+      "trigger": "button[aria-controls='main-navigation']",
+      "panel": "#main-navigation",
+      "close": "button[aria-label='Chiudi menu']"
+    },
+    "modal": {
+      "path": "/candidature",
+      "trigger": "button[data-test='open-confirm']",
+      "dialog": "[role='dialog']",
+      "close": "[role='dialog'] button[data-test='cancel']"
+    },
+    "form": {
+      "path": "/candidature",
+      "submit": "button[type='submit']",
+      "error": "[role='alert']"
+    },
+    "table": {
+      "path": "/candidature",
+      "table": "table",
+      "header": "thead th",
+      "row": "tbody tr"
+    },
+    "wizard": {
+      "path": "/candidature/nuova",
+      "next": "[data-test='wizard-next']",
+      "previous": "[data-test='wizard-back']",
+      "step": "[aria-current='step']"
+    }
+  }
+}

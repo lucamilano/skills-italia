@@ -1,0 +1,13 @@
+{
+  "name": "skills-italia",
+  "version": "0.1.0",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "italian-pa-frontend",
+      "version": "1.0.0",
+      "path": "skills/italian-pa-frontend",
+      "status": "available"
+    }
+  ]
+}

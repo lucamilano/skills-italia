@@ -1,0 +1,51 @@
+{
+  "title": "Domanda dimostrativa (senza dati personali)",
+  "technology": {
+    "selection": "existing-project",
+    "framework": null
+  },
+  "workflow": "administrative-wizard",
+  "steps": [
+    {
+      "id": "applicant",
+      "title": "Dati del richiedente",
+      "fields": [
+        {
+          "id": "email",
+          "label": "Indirizzo email",
+          "required": true,
+          "validation": [
+            "required",
+            "email-format"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attachments",
+      "title": "Documenti",
+      "fields": []
+    },
+    {
+      "id": "review",
+      "title": "Riepilogo",
+      "fields": []
+    }
+  ],
+  "features": {
+    "draft": false,
+    "attachments": false
+  },
+  "backend": {
+    "draft_endpoint": null,
+    "upload_endpoint": null,
+    "submit_endpoint": null
+  },
+  "acceptance_tests": [
+    "keyboard-navigation",
+    "invalid-submit-focus",
+    "preserve-step-values",
+    "review-edit",
+    "unknown-submit-outcome"
+  ]
+}
