@@ -1,7 +1,7 @@
 {
   "name": "skills-italia",
   "display_name": "Skills Italia",
-  "description": "Open-source AI agent skills for Italian Public Administration: accessible frontends, design systems, security, interoperability and digital services.",
+  "description": "Skill open source per agenti AI dedicate allo sviluppo di software e servizi digitali della Pubblica Amministrazione italiana. Primo modulo disponibile: frontend accessibili con il design system .italia.",
   "homepage": null,
   "topics": [
     "agent-skills",

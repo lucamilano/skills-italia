@@ -1,6 +1,6 @@
 # Installing and updating Skills Italia
 
-[English overview](../README.md) · [Panoramica italiana](README.it.md) · [Architecture](architecture.md)
+[Panoramica italiana](../README.md) · [English overview](README.en.md) · [Architecture](architecture.md)
 
 ## Requirements and trust
 

@@ -6,7 +6,7 @@ The owner explicitly authorized repository creation and publication after review
 
 ## Configuration verified
 
-- Repository description and all ten topics from `github-metadata.json` are configured.
+- The repository description is in Italian and all ten topics from `github-metadata.json` are configured. The root README uses Italian as its primary language, with a complete [English overview](README.en.md) linked for international contributors.
 - Issues and Discussions are enabled; the wiki is disabled.
 - Private vulnerability reporting, dependency vulnerability alerts, secret scanning and push protection are enabled.
 - Private security reports use [GitHub Security Advisories](https://github.com/lucamilano/skills-italia/security/advisories/new).

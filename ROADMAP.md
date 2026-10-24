@@ -1,6 +1,6 @@
 # Skills Italia roadmap
 
-[English overview](README.md) · [Panoramica italiana](docs/README.it.md) · [Propose a skill](docs/contributing-skills.md)
+[Panoramica italiana](README.md) · [English overview](docs/README.en.md) · [Propose a skill](docs/contributing-skills.md)
 
 Skills Italia supports the lifecycle of Italian public sector software, from interfaces to modernization and trustworthy integrations. This is a sequence of areas to develop, not a dated delivery commitment. Community needs, official specifications, maintainers and verification capacity determine priorities.
 

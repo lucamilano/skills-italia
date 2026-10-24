@@ -1,20 +1,22 @@
-# Skills Italia documentation
+# Documentazione di Skills Italia
 
-[Project overview](../README.md) · [Panoramica completa in italiano](README.it.md)
+[Panoramica in italiano](../README.md) · [English overview](README.en.md)
 
-| Guide | Purpose |
+| Guida | Contenuto |
 | --- | --- |
-| [Installation](installation.md) | Single/all skills, Codex/Claude Code, user/project scope, updates and removal. |
-| [Architecture](architecture.md) | Module boundaries, independent versions and distribution. |
-| [Available frontend module](../skills/italian-pa-frontend/README.md) | Domain workflows, helpers, references and optional browser checks. |
-| [Suite roadmap](../ROADMAP.md) | Available, Planned and Under consideration modules and prerequisites. |
-| [Contributing skills](contributing-skills.md) | Proposals, package conventions, tests and acceptance criteria. |
-| [Verification](verification.md) | Reproducible commands and evidence boundaries. |
-| [Local release readiness](release-readiness.md) | Actual results, environment and checks not performed. |
-| [Migration inventory](migration.md) | Original file preservation, adaptations and new suite files. |
-| [Sources](sources.md) | Official documentation, libraries and content verification limits. |
-| [Discoverability and Pages](seo.md) | GitHub metadata, bilingual navigation and future web SEO criteria. |
-| [Publication](publication.md) | Local artifacts and manual GitHub configuration after approval. |
-| [GitHub publication status](publication-status.md) | Verified repository settings, three-platform CI and release distribution. |
+| [Installazione](installation.md) | Singola skill o suite, Codex e Claude Code, ambito utente o progetto, aggiornamento e rimozione. |
+| [Architettura](architecture.md) | Confini dei moduli, versionamento indipendente e distribuzione. |
+| [Modulo frontend disponibile](../skills/italian-pa-frontend/README.md) | Procedure, strumenti, fonti e controlli browser opzionali. |
+| [Roadmap della suite](../ROADMAP.md) | Moduli disponibili, pianificati o da valutare e relativi prerequisiti. |
+| [Contribuire con nuove skill](contributing-skills.md) | Proposte, convenzioni, verifiche e criteri di accettazione. |
+| [Verifiche](verification.md) | Comandi riproducibili e limiti delle evidenze. |
+| [Preparazione locale della release](release-readiness.md) | Risultati effettivi, ambiente e controlli non eseguiti. |
+| [Inventario della migrazione](migration.md) | File originali conservati, adattamenti e nuovi file della suite. |
+| [Fonti](sources.md) | Documentazione e librerie ufficiali, con limiti delle verifiche. |
+| [Visibilità e GitHub Pages](seo.md) | Metadati GitHub, navigazione bilingue e criteri SEO per un eventuale sito. |
+| [Pubblicazione](publication.md) | Artefatti locali e configurazione GitHub autorizzata. |
+| [Stato della pubblicazione GitHub](publication-status.md) | Impostazioni verificate, CI su tre sistemi e distribuzione della release. |
 
-Skills Italia is independent. Only Italian PA Frontend is currently available; roadmap modules are not distributed implementations.
+L'italiano è la lingua principale della presentazione del progetto. Alcune guide tecniche collegate sono in inglese; la [panoramica inglese completa](README.en.md) resta disponibile per la community internazionale.
+
+Skills Italia è indipendente. Attualmente è disponibile soltanto Italian PA Frontend; i moduli della roadmap non sono implementazioni distribuite.

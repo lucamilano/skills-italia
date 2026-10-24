@@ -4,7 +4,7 @@ Suite releases and individual skill releases have independent versions. Entries 
 
 ## [Unreleased]
 
-No changes yet beyond the prepared initial release.
+- Made Italian the primary language of the root README and GitHub About description; retained a complete English overview in `docs/README.en.md` and updated bilingual navigation.
 
 ## [0.1.0] — 2026-10-24
 

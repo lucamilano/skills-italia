@@ -1,117 +1,118 @@
 # Skills Italia
 
-**AI Agent Skills for Italian Public Administration Development**
+**Skill per agenti AI per sviluppare software e servizi digitali della Pubblica Amministrazione italiana**
 
-[Italiano](docs/README.it.md) · [Installation](docs/installation.md) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
+*AI Agent Skills for Italian Public Administration Development*
 
-[![Suite checks](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml/badge.svg)](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml)
+[English](docs/README.en.md) · [Installazione](docs/installation.md) · [Roadmap](ROADMAP.md) · [Contributi](CONTRIBUTING.md) · [Licenza MIT](LICENSE)
 
-[GitHub repository](https://github.com/lucamilano/skills-italia) · [Report an issue](https://github.com/lucamilano/skills-italia/issues/new/choose) · [Discussions](https://github.com/lucamilano/skills-italia/discussions)
+[![Verifiche della suite](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml/badge.svg)](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml)
 
-Skills Italia is an independent open-source suite of **AI agent skills** for developers building and maintaining Italian public sector software. It brings version-aware official references, implementation workflows and verification tools into an agent's development process.
+[Repository GitHub](https://github.com/lucamilano/skills-italia) · [Segnala un problema](https://github.com/lucamilano/skills-italia/issues/new/choose) · [Discussioni](https://github.com/lucamilano/skills-italia/discussions)
 
-The suite starts with the **Italian public administration frontend**: accessible government websites, administrative forms, dashboards and existing applications. Its vision extends to security, identity, public sector interoperability and software modernization. Only the frontend skill is available today.
+Skills Italia è una suite open source indipendente di **skill per agenti AI** dedicata agli sviluppatori che realizzano e mantengono software e servizi digitali per la Pubblica Amministrazione italiana. Fornisce fonti ufficiali da verificare per versione, procedure di implementazione e strumenti di controllo nel processo di sviluppo dell'agente.
 
-Suite **0.1.0** packages Italian PA Frontend **1.0.0**. These versions have separate lifecycles; see the [changelog](CHANGELOG.md).
+La suite parte dal frontend: siti pubblici accessibili, form amministrativi, dashboard e applicazioni esistenti. La visione comprende sicurezza, identità, interoperabilità e modernizzazione software PA. Oggi è disponibile soltanto la skill frontend.
 
-## Why Skills Italia?
+La suite **0.1.0** distribuisce Italian PA Frontend **1.0.0**. I due versionamenti hanno cicli distinti: consulta il [changelog](CHANGELOG.md).
 
-Government services need usable interfaces, reliable integrations and technical decisions grounded in the actual project. Generic code generation can mix design-system versions, replace working components or invent backend capabilities. Skills Italia helps agents inspect the repository, reuse existing solutions, consult relevant sources and report what they actually verified.
+## Perché Skills Italia?
 
-These Italian public administration AI skills support implementation, analysis and maintenance. They do not certify legal compliance or replace specialist review.
+I servizi pubblici richiedono interfacce usabili, integrazioni affidabili e decisioni fondate sul progetto reale. La generazione generica di codice può mescolare versioni del design system Italia, sostituire componenti funzionanti o inventare capacità backend. Skills Italia guida l'analisi del repository, il riuso delle soluzioni esistenti, la consultazione delle fonti pertinenti e la rendicontazione delle verifiche effettive.
 
-## Available Skills
+Le competenze riutilizzabili sono pensate per gli agenti AI usati dagli sviluppatori. Supportano implementazione, analisi e manutenzione del software per la pubblica amministrazione, senza certificare conformità legale o sostituire valutazioni specialistiche.
 
-| Skill | Version | Status | Scope |
+## Skill disponibili — Available Skills
+
+| Skill | Versione | Stato | Ambito |
 | --- | --- | --- | --- |
-| [Italian PA Frontend](skills/italian-pa-frontend/SKILL.md) | 1.0.0 | **Available** | Generate, audit and refactor frontend interfaces with any selected or detected web stack. |
+| [Italian PA Frontend](skills/italian-pa-frontend/SKILL.md) | 1.0.0 | **Disponibile — Available** | Generazione, audit e refactoring frontend con qualunque stack web scelto o rilevato. |
 
-Italian PA Frontend includes:
+Italian PA Frontend comprende:
 
-- Design system .italia and Designers Italia workflows, Bootstrap Italia component references and version rules, with Dev Kit Italia and Design React Kit considered when appropriate to the actual project.
-- Accessible components, administrative forms and wizards, responsive dashboards and tables.
-- Stack detection, an indicative inventory of reusable patterns and a static HTML-like audit.
-- JSON brief validators, implementation templates and realistic [usage examples](skills/italian-pa-frontend/examples/prompts.md).
-- Optional, separate Playwright and axe checks, screenshots and bounded iterative UI review.
+- Procedure basate sul design system .italia e Designers Italia; riferimenti ai componenti Bootstrap Italia e regole versionate, valutando Dev Kit Italia e Design React Kit quando pertinenti al progetto reale.
+- Componenti accessibili, form e wizard amministrativi, dashboard e tabelle responsive.
+- Rilevamento dello stack, inventario indicativo dei pattern riutilizzabili e audit statico di file simili a HTML.
+- Validatori strutturali di specifiche JSON, template di consegna ed [esempi d'uso](skills/italian-pa-frontend/examples/prompts.md).
+- Modulo separato e opzionale Playwright e axe, screenshot e revisione iterativa con limite di iterazioni.
 
-The component catalog and version matrix are partial. Specification validators check structure, not a running application's behavior. See the [module documentation](skills/italian-pa-frontend/README.md) and [verification limits](docs/verification.md).
+Catalogo e matrice versioni sono parziali. I validatori controllano le specifiche, non il comportamento di un'applicazione in esecuzione. Consulta la [documentazione del modulo](skills/italian-pa-frontend/README.md) e i [limiti delle verifiche](docs/verification.md).
 
-## Planned Skills
+## Skill pianificate — Planned Skills
 
-These are proposals for future modules, **not installable skills**. There are no placeholder implementations.
+Sono proposte per moduli futuri, **non skill installabili**. Non esistono implementazioni segnaposto.
 
-| Module | Status | Intended scope |
+| Modulo | Stato | Ambito previsto |
 | --- | --- | --- |
-| Italian PA Accessibility | **Planned** | WCAG 2.2, applicable requirements, keyboard, focus, screen readers and evidence-based audits. |
-| Italian PA Identity | **Planned** | SPID, CIE, OpenID Connect, relevant SAML specifications and secure sessions. |
-| Italian PA Interoperability | **Planned** | REST, OpenAPI, PDND, e-services, contracts and observability. |
-| Italian PA Security | **Planned** | Secure coding, OWASP, secrets, authorization and threat modeling. |
-| Italian PA Architecture | **Planned** | Legacy analysis, modular architecture, incremental modernization, migrations and ADRs. |
-| Italian PA Quality | **Under consideration** | Unit, integration, end-to-end, contract and performance testing; CI/CD. |
-| Italian PA Documentation | **Under consideration** | Technical specifications, operational guides, diagrams and requirement traceability. |
-| Italian PA Privacy | **Under consideration** | Privacy by design, minimization, retention and technical support for privacy assessments. |
+| Italian PA Accessibility | **Pianificata — Planned** | WCAG 2.2 e requisiti applicabili, tastiera, focus, screen reader e audit con evidenze. |
+| Italian PA Identity | **Pianificata — Planned** | Integrazione SPID CIE, OpenID Connect, SAML pertinente e sessioni sicure. |
+| Italian PA Interoperability | **Pianificata — Planned** | REST, OpenAPI, interoperabilità PDND, e-service, contratti e osservabilità. |
+| Italian PA Security | **Pianificata — Planned** | Secure coding, OWASP, segreti, autorizzazioni e threat modeling. |
+| Italian PA Architecture | **Pianificata — Planned** | Analisi legacy, architetture modulari, modernizzazione graduale, migrazioni e ADR. |
+| Italian PA Quality | **Da valutare — Under consideration** | Test unitari, integrazione, E2E, contratti, prestazioni e CI/CD. |
+| Italian PA Documentation | **Da valutare — Under consideration** | Specifiche, manuali operativi, diagrammi e tracciabilità dei requisiti. |
+| Italian PA Privacy | **Da valutare — Under consideration** | Privacy by design, minimizzazione, conservazione e supporto tecnico alle valutazioni privacy. |
 
-The [public roadmap](ROADMAP.md) explains boundaries, prerequisites and acceptance gates. It assigns no speculative release dates. Propose modules through repository Issues, or Discussions if enabled after publication.
+La [roadmap pubblica](ROADMAP.md) chiarisce confini, prerequisiti e criteri di disponibilità. Non assegna date arbitrarie. La community può proporre moduli tramite Issues o Discussions del repository.
 
-## AI agent compatibility
+## Compatibilità con gli agenti AI
 
-| Agent | Installation | Explicit use | Evidence |
+| Agente | Installazione | Invocazione esplicita | Evidenza |
 | --- | --- | --- | --- |
-| OpenAI Codex | `.agents/skills/` in a project or user home | `$italian-pa-frontend` | Format and paths checked against [official documentation](https://developers.openai.com/codex/skills/). |
-| Claude Code | `.claude/skills/` in a project or user home | `/italian-pa-frontend` | Format and paths checked against [official documentation](https://code.claude.com/docs/en/skills). |
-| Other Agent Skills agents | Follow the agent's documentation | Agent-specific | Not verified; check discovery, script access and permissions. |
+| OpenAI Codex | `.agents/skills/` nel progetto o nella home utente | `$italian-pa-frontend` | Formato e percorsi confrontati con la [documentazione ufficiale](https://developers.openai.com/codex/skills/). |
+| Claude Code | `.claude/skills/` nel progetto o nella home utente | `/italian-pa-frontend` | Formato e percorsi confrontati con la [documentazione ufficiale](https://code.claude.com/docs/en/skills). |
+| Altri agenti Agent Skills | Secondo la documentazione dell'agente | Specifica dell'agente | Non verificati: controllare discovery, accesso agli script e permessi. |
 
-Local installation and structural compatibility are tested separately from agent behavior. Interactive sessions with both agents have **not** been tested. This guide concerns local clients; cloud or managed environments may use different installation policies. The package follows the [Agent Skills format](https://agentskills.io/specification).
+Installazione locale e compatibilità strutturale sono verificate separatamente dal comportamento degli agenti. Le sessioni interattive con entrambi gli agenti **non sono state collaudate**. La guida riguarda i client locali: ambienti cloud e gestiti possono applicare regole diverse. Il pacchetto segue il [formato Agent Skills](https://agentskills.io/specification).
 
-## Installation
+## Installazione
 
-Download or clone a reviewed copy of this repository, then run from its root with Python **3.10+**. Python helpers have no third-party dependencies. Node.js **22.12+** is needed only for Node checks and optional browser tooling. No installer downloads or executes remote scripts.
+Scarica o clona una copia revisionata del repository ed esegui dalla root con Python **3.10+**. Gli script Python non richiedono dipendenze esterne. Node.js **22.12+** serve solo per i controlli Node e gli strumenti browser opzionali. Gli installatori non scaricano né eseguono script remoti.
 
 ```console
 git clone https://github.com/lucamilano/skills-italia.git
 cd skills-italia
 ```
 
-Install one skill into an existing target project:
+Una singola skill nel progetto di destinazione già esistente:
 
 ```console
-python scripts/install.py --skill italian-pa-frontend --agent codex --scope project --project-path /path/to/project
+python scripts/install.py --skill italian-pa-frontend --agent codex --scope project --project-path /percorso/progetto
 ```
 
-Install all available skills for both agents at user scope (currently the same single skill):
+Tutte le skill disponibili per entrambi gli agenti a livello utente (attualmente una sola):
 
 ```console
 python scripts/install.py --all --agent both --scope user
 ```
 
-Use `--agent claude` for Claude Code, `--dry-run` to inspect destinations and `--force` to replace a changed installation after making a backup. Identical installs are a no-op. PowerShell and Bash entry points are provided for Windows, Linux and macOS. [Full installation, update and removal guide](docs/installation.md).
+Usa `--agent claude` per Claude Code, `--dry-run` per ispezionare le destinazioni e `--force` per sostituire un'installazione modificata dopo averne fatto un backup. Installazioni identiche non vengono riscritte. Sono presenti entry point PowerShell e Bash per Windows, Linux e macOS. [Guida completa a installazione, aggiornamento e rimozione](docs/installation.md).
 
-## Quick start
+## Avvio rapido
 
-1. Install the skill into your target project or user directory.
-2. Start a new local agent session in the target project and verify that the skill is listed.
-3. Invoke it with a bounded request and inspect its changes and reported evidence.
+1. Installa la skill nel progetto o nella home utente.
+2. Avvia una nuova sessione locale dell'agente nel progetto e verifica che la skill sia elencata.
+3. Invocala con un obiettivo circoscritto e controlla modifiche ed evidenze riportate.
 
-Codex example:
-
-```text
-Use $italian-pa-frontend to analyze this
-project and improve its UI following the
-Italian Public Administration Design System.
-
-Detect the existing stack, reuse available
-components and verify accessibility.
-```
-
-Claude Code example:
+Esempio Codex:
 
 ```text
-/italian-pa-frontend Audit the administrative dashboard without changing files.
-Check keyboard navigation, table filters and error states.
-Report evidence and distinguish confirmed issues from checks not performed.
+Usa $italian-pa-frontend per analizzare questo progetto e migliorarne
+l'interfaccia seguendo il design system della Pubblica Amministrazione italiana.
+
+Rileva lo stack esistente, riusa i componenti disponibili e verifica
+l'accessibilità, distinguendo i controlli eseguiti da quelli ancora da svolgere.
 ```
 
-## Usage examples
+Esempio con Claude Code per la pubblica amministrazione:
+
+```text
+/italian-pa-frontend Analizza la dashboard amministrativa senza modificare file.
+Verifica tastiera, filtri della tabella e stati di errore.
+Riporta evidenze distinguendo criticità confermate e controlli non eseguiti.
+```
+
+## Esempi d'uso
 
 ```text
 Usa $italian-pa-frontend per migliorare il form di candidatura esistente.
@@ -120,74 +121,76 @@ Non inventare API per bozze o allegati. Verifica focus, errori e responsive.
 ```
 
 ```text
-Use the italian-pa-frontend skill to refactor this service's search results.
-Keep the current Java/Thymeleaf stack and backend contracts.
-Check sorting, pagination, empty states and mobile access to every action.
+Usa la skill italian-pa-frontend per migliorare i risultati di ricerca del servizio.
+Mantieni lo stack Java/Thymeleaf e i contratti backend esistenti.
+Verifica ordinamento, paginazione, stati vuoti e accesso alle azioni da mobile.
 ```
 
-For Bootstrap Italia AI assistance, ask the agent to identify the installed library version before consulting component examples. Designers Italia Codex workflows and Bootstrap Italia Claude Code workflows use the same independent skill; neither integration is an official endorsement.
+Per usare Bootstrap Italia con assistenza AI, chiedi prima di identificare la versione installata della libreria. La skill per Codex dedicata alla pubblica amministrazione è lo stesso modulo utilizzabile con Claude Code. L'uso di Designers Italia con agenti AI non implica approvazione ufficiale.
 
-## Technology choice
+## Scelta delle tecnologie
 
-The user's explicit technology choice takes priority. Otherwise the agent inspects the existing stack and preserves its framework, versions and conventions. Any plausible web stack can be specified; React, Razor and HTML examples are optional references. New projects require clarification only when choosing a technology is necessary to proceed. A UX audit or specification can proceed without a framework.
+La scelta esplicita dell'utente ha priorità. In assenza di indicazioni, l'agente analizza lo stack esistente e ne mantiene framework, versioni e convenzioni. È possibile indicare qualunque stack web plausibile; gli esempi React, Razor e HTML sono approfondimenti opzionali. Nei nuovi progetti si chiede una tecnologia solo se necessaria per procedere. Audit UX e specifiche possono essere svolti senza scegliere un framework.
 
-## Modular architecture
+## Architettura modulare
 
 ```text
 skills-italia/
 ├── README.md, LICENSE, CONTRIBUTING.md, SECURITY.md
 ├── suite.json, CHANGELOG.md, ROADMAP.md, RELEASE_NOTES.md
-├── docs/                 # bilingual overview, installation, governance, release guide
+├── docs/                 # panoramica bilingue, installazione, governance, release
 ├── skills/
 │   └── italian-pa-frontend/
 │       ├── SKILL.md, LICENSE, README.md, CHANGELOG.md, ROADMAP.md
 │       ├── references/, catalog/, templates/, examples/
 │       ├── scripts/, tests/
 │       └── browser-tests/
-├── scripts/              # suite installation, validation and release packaging
-├── tests/                # suite and installation regression tests
-└── .github/              # CI, dependency updates and contribution templates
+├── scripts/              # installazione, validazione e pacchetti della suite
+├── tests/                # regressioni della suite e dell'installazione
+└── .github/              # CI, aggiornamenti dipendenze e template contributi
 ```
 
-Each available skill is self-contained, independently installable and versioned. Suite governance does not replace specialist module rules. [Architecture and version policy](docs/architecture.md).
+Ogni skill disponibile è autonoma, installabile e versionabile indipendentemente. Le regole generali della suite non sostituiscono quelle specialistiche dei moduli. [Architettura e versionamento](docs/architecture.md).
 
-## Accessibility and security
+## Accessibilità e sicurezza
 
-Automated checks find only some accessibility issues. Keyboard, focus, screen reader, zoom and visual reviews remain necessary, alongside verification of applicable requirements. A design kit, a clean axe result or a generated report does not certify WCAG or AGID compliance.
+I controlli automatici rilevano soltanto parte dei problemi. Servono verifiche di tastiera, focus, screen reader, zoom e qualità visiva, oltre alla valutazione dei requisiti applicabili. L'utilizzo di un kit, l'assenza di violazioni axe o un report generato non certificano conformità WCAG né accessibilità AGID.
 
-Reuse existing authorization, server validation, CSRF protections and escaping. Do not include secrets, personal data or real production sessions in examples, screenshots or reports. Browser checks require a configured, authorized target and default to localhost. [Security policy](SECURITY.md).
+Mantieni autorizzazioni, validazioni server, protezioni CSRF ed escaping esistenti. Non inserire segreti, dati personali o sessioni di produzione in esempi, screenshot e report. I test browser richiedono un target configurato e autorizzato, limitato a localhost per default. [Policy di sicurezza](SECURITY.md).
 
 ## Roadmap
 
-Skills Italia aims to support the software lifecycle beyond frontend development. See [Available, Planned and Under consideration modules](ROADMAP.md), including the future identity, interoperability and modernization work. Contributions must demonstrate a useful workflow and credible verification before a module becomes available.
+Skills Italia intende supportare il ciclo di vita del software oltre il frontend. Consulta i [moduli Available, Planned e Under consideration](ROADMAP.md), inclusi i futuri ambiti identità, interoperabilità e modernizzazione. Una nuova skill diventa disponibile soltanto con procedure utili ed evidenze credibili.
 
-## Official sources
+## Fonti ufficiali
 
-- [Designers Italia](https://designers.italia.it/) and the [design system .italia](https://designers.italia.it/design-system/): official design documentation.
-- [Bootstrap Italia](https://github.com/italia/bootstrap-italia), [Dev Kit Italia](https://github.com/italia/dev-kit-italia) and [Design React Kit](https://github.com/italia/design-react-kit): official tools and libraries, to be checked against installed versions.
-- [AgID](https://www.agid.gov.it/): verify current legal and technical requirements in the relevant official publications.
-- [WCAG 2.2](https://www.w3.org/TR/WCAG22/): W3C technical recommendation; applicability to a service must be assessed separately.
+- [Designers Italia](https://designers.italia.it/) e [design system .italia](https://designers.italia.it/design-system/): documentazione ufficiale di design.
+- [Bootstrap Italia](https://github.com/italia/bootstrap-italia), [Dev Kit Italia](https://github.com/italia/dev-kit-italia) e [Design React Kit](https://github.com/italia/design-react-kit): strumenti e librerie ufficiali da confrontare con le versioni installate.
+- [AgID](https://www.agid.gov.it/): verificare requisiti giuridici e tecnici nelle pubblicazioni ufficiali pertinenti.
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/): raccomandazione tecnica W3C; l'applicabilità al singolo servizio richiede una valutazione separata.
 
-Skills Italia supplies independent workflows and technical recommendations. It does not issue normative requirements. [Source verification register](docs/sources.md).
+Skills Italia offre procedure indipendenti e raccomandazioni tecniche, senza introdurre requisiti normativi. [Registro delle verifiche sulle fonti](docs/sources.md).
 
-## Contributing
+## Come contribuire
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md), the [new skill guide](docs/contributing-skills.md) and our [Code of Conduct](CODE_OF_CONDUCT.md). Contributions in Italian or English are welcome. Include official sources, reproducible evidence and honest test limits.
+Leggi [CONTRIBUTING.md](CONTRIBUTING.md), la [guida alle nuove skill](docs/contributing-skills.md) e il [Codice di condotta](CODE_OF_CONDUCT.md). Sono benvenuti contributi in italiano o inglese con fonti ufficiali, prove riproducibili e limiti dichiarati.
 
-Run the repository's local release checks:
+Controlli locali di preparazione della release:
 
 ```console
 python scripts/release_check.py
 ```
 
-This command runs structural, documentation, Python, Node and installation checks. Browser E2E tests require an application and are separate. [Verification guide](docs/verification.md).
+Il comando esegue controlli strutturali, documentali, Python, Node e installazione. I test E2E richiedono un'applicazione e restano separati. [Guida alle verifiche](docs/verification.md).
 
-## License
+## Licenza
 
-[MIT](LICENSE). Existing Italian PA Frontend contributor attribution is retained. External documentation and libraries keep their own licenses and trademarks.
+[MIT](LICENSE). Sono conservate le attribuzioni dei contributori di Italian PA Frontend. Documentazione e librerie esterne mantengono licenze e marchi propri.
 
 ## Disclaimer
 
+Skills Italia è un progetto open source indipendente, non ufficialmente affiliato, approvato o sostenuto da AGID, Designers Italia o dal Governo italiano.
+
 Skills Italia is an independent open-source project and is not officially affiliated with or endorsed by AGID, Designers Italia, or the Italian Government.
 
-The skills support technical work and do not replace legal, security, accessibility or privacy professionals. There is no automatic compliance certification.
+Le skill supportano il lavoro tecnico e non sostituiscono professionisti legali, di sicurezza, accessibilità o privacy. Non esiste una certificazione automatica di conformità.

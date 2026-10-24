@@ -4,7 +4,7 @@
 
 ## Current release: repository documentation
 
-The maintained public documentation is Markdown on GitHub. The English root README and complete Italian translation link to one another and to installation, architecture, contribution and roadmap documents. Descriptive headings, meaningful link text, explicit availability statuses and a concise repository description serve developers searching for AI agent skills for government software.
+The maintained public documentation is Markdown on GitHub. Italian is the primary language of the root README and GitHub About description, serving the developers building services for Italy's public administration. The complete English overview is maintained in `docs/README.en.md`; `docs/README.it.md` preserves the existing Italian documentation entry point. The overviews link to one another and to installation, architecture, contribution and roadmap documents. Descriptive headings, meaningful link text, explicit availability statuses and a concise repository description support discoverability without keyword repetition.
 
 Keywords appear in relevant prose: frontend terms describe the available module; SPID/CIE, PDND, security, privacy and modernization proposals are confined to roadmap content. Do not add invisible keywords, repeated search phrases, empty module pages or claims of official affiliation. GitHub controls the HTML metadata of repository pages; raw README HTML is not a reliable way to inject canonical or Open Graph tags.
 

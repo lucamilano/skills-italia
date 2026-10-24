@@ -12,7 +12,7 @@ For vulnerabilities, follow [SECURITY.md](SECURITY.md) rather than posting explo
 
 1. Work on a focused branch. Identify whether the change belongs to suite infrastructure or a specific skill.
 2. Preserve the user's stack and working features. Keep specialist instructions and dependencies inside the relevant module.
-3. Update affected documentation, examples and the appropriate changelog. Keep [English](README.md) and [Italian](docs/README.it.md) overviews aligned when user-visible behavior changes.
+3. Update affected documentation, examples and the appropriate changelog. Italian is the primary language of the [root README](README.md) and GitHub description. Keep the complete [English overview](docs/README.en.md) and the retained [Italian documentation entry point](docs/README.it.md) aligned with the root README when user-visible behavior changes.
 4. Run `python scripts/release_check.py` with Python 3.10+ and Node.js 22.12+. This includes installation and packaging tests in temporary directories. No application or remote credentials are required.
 5. For browser-harness changes, install locked browser dependencies and run its Node validation. Application E2E tests require a configured authorized target; document target, viewport and actual results. See [verification](docs/verification.md).
 6. Submit a pull request using the template. Explain the problem, resulting behavior, sources/versions, meaningful checks run, and any checks not performed.

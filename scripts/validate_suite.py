@@ -11,7 +11,7 @@ from install import ROOT, NAME, SKIP_DIRS, available, excluded, linked
 VERSION = re.compile(r'(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)\Z')
 REQUIRED = ['README.md', 'LICENSE', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md',
             'SECURITY.md', 'CHANGELOG.md', 'ROADMAP.md', 'RELEASE_NOTES.md',
-            'docs/README.it.md', 'docs/architecture.md', 'docs/installation.md',
+            'docs/README.it.md', 'docs/README.en.md', 'docs/architecture.md', 'docs/installation.md',
             'docs/contributing-skills.md', 'docs/seo.md', 'docs/publication.md',
             'docs/release-readiness.md', 'docs/github-metadata.json',
             '.github/workflows/checks.yml', '.github/PULL_REQUEST_TEMPLATE.md']

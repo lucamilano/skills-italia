@@ -1,8 +1,10 @@
 # Skills Italia
 
-**AI Agent Skills for Italian Public Administration Development**
+**Skill per agenti AI per sviluppare software e servizi digitali della Pubblica Amministrazione italiana**
 
-[English](../README.md) · [Installazione](installation.md) · [Roadmap](../ROADMAP.md) · [Contributi](../CONTRIBUTING.md) · [Licenza MIT](../LICENSE)
+*AI Agent Skills for Italian Public Administration Development*
+
+[English](README.en.md) · [Installazione](installation.md) · [Roadmap](../ROADMAP.md) · [Contributi](../CONTRIBUTING.md) · [Licenza MIT](../LICENSE)
 
 [![Verifiche della suite](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml/badge.svg)](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml)
 
@@ -24,7 +26,7 @@ Le competenze riutilizzabili sono pensate per gli agenti AI usati dagli sviluppa
 
 | Skill | Versione | Stato | Ambito |
 | --- | --- | --- | --- |
-| [Italian PA Frontend](../skills/italian-pa-frontend/SKILL.md) | 1.0.0 | **Available — disponibile** | Generazione, audit e refactoring frontend con qualunque stack web scelto o rilevato. |
+| [Italian PA Frontend](../skills/italian-pa-frontend/SKILL.md) | 1.0.0 | **Disponibile — Available** | Generazione, audit e refactoring frontend con qualunque stack web scelto o rilevato. |
 
 Italian PA Frontend comprende:
 
@@ -42,16 +44,16 @@ Sono proposte per moduli futuri, **non skill installabili**. Non esistono implem
 
 | Modulo | Stato | Ambito previsto |
 | --- | --- | --- |
-| Italian PA Accessibility | **Planned — pianificata** | WCAG 2.2 e requisiti applicabili, tastiera, focus, screen reader e audit con evidenze. |
-| Italian PA Identity | **Planned — pianificata** | Integrazione SPID CIE, OpenID Connect, SAML pertinente e sessioni sicure. |
-| Italian PA Interoperability | **Planned — pianificata** | REST, OpenAPI, interoperabilità PDND, e-service, contratti e osservabilità. |
-| Italian PA Security | **Planned — pianificata** | Secure coding, OWASP, segreti, autorizzazioni e threat modeling. |
-| Italian PA Architecture | **Planned — pianificata** | Analisi legacy, architetture modulari, modernizzazione graduale, migrazioni e ADR. |
-| Italian PA Quality | **Under consideration — da valutare** | Test unitari, integrazione, E2E, contratti, prestazioni e CI/CD. |
-| Italian PA Documentation | **Under consideration — da valutare** | Specifiche, manuali operativi, diagrammi e tracciabilità dei requisiti. |
-| Italian PA Privacy | **Under consideration — da valutare** | Privacy by design, minimizzazione, conservazione e supporto tecnico alle valutazioni privacy. |
+| Italian PA Accessibility | **Pianificata — Planned** | WCAG 2.2 e requisiti applicabili, tastiera, focus, screen reader e audit con evidenze. |
+| Italian PA Identity | **Pianificata — Planned** | Integrazione SPID CIE, OpenID Connect, SAML pertinente e sessioni sicure. |
+| Italian PA Interoperability | **Pianificata — Planned** | REST, OpenAPI, interoperabilità PDND, e-service, contratti e osservabilità. |
+| Italian PA Security | **Pianificata — Planned** | Secure coding, OWASP, segreti, autorizzazioni e threat modeling. |
+| Italian PA Architecture | **Pianificata — Planned** | Analisi legacy, architetture modulari, modernizzazione graduale, migrazioni e ADR. |
+| Italian PA Quality | **Da valutare — Under consideration** | Test unitari, integrazione, E2E, contratti, prestazioni e CI/CD. |
+| Italian PA Documentation | **Da valutare — Under consideration** | Specifiche, manuali operativi, diagrammi e tracciabilità dei requisiti. |
+| Italian PA Privacy | **Da valutare — Under consideration** | Privacy by design, minimizzazione, conservazione e supporto tecnico alle valutazioni privacy. |
 
-La [roadmap pubblica](../ROADMAP.md) chiarisce confini, prerequisiti e criteri di disponibilità. Non assegna date arbitrarie. La community può proporre moduli tramite Issues, oppure Discussions se abilitate dopo la pubblicazione.
+La [roadmap pubblica](../ROADMAP.md) chiarisce confini, prerequisiti e criteri di disponibilità. Non assegna date arbitrarie. La community può proporre moduli tramite Issues o Discussions del repository.
 
 ## Compatibilità con gli agenti AI
 
@@ -95,12 +97,11 @@ Usa `--agent claude` per Claude Code, `--dry-run` per ispezionare le destinazion
 Esempio Codex:
 
 ```text
-Use $italian-pa-frontend to analyze this
-project and improve its UI following the
-Italian Public Administration Design System.
+Usa $italian-pa-frontend per analizzare questo progetto e migliorarne
+l'interfaccia seguendo il design system della Pubblica Amministrazione italiana.
 
-Detect the existing stack, reuse available
-components and verify accessibility.
+Rileva lo stack esistente, riusa i componenti disponibili e verifica
+l'accessibilità, distinguendo i controlli eseguiti da quelli ancora da svolgere.
 ```
 
 Esempio con Claude Code per la pubblica amministrazione:
@@ -120,9 +121,9 @@ Non inventare API per bozze o allegati. Verifica focus, errori e responsive.
 ```
 
 ```text
-Use the italian-pa-frontend skill to refactor this service's search results.
-Keep the current Java/Thymeleaf stack and backend contracts.
-Check sorting, pagination, empty states and mobile access to every action.
+Usa la skill italian-pa-frontend per migliorare i risultati di ricerca del servizio.
+Mantieni lo stack Java/Thymeleaf e i contratti backend esistenti.
+Verifica ordinamento, paginazione, stati vuoti e accesso alle azioni da mobile.
 ```
 
 Per usare Bootstrap Italia con assistenza AI, chiedi prima di identificare la versione installata della libreria. La skill per Codex dedicata alla pubblica amministrazione è lo stesso modulo utilizzabile con Claude Code. L'uso di Designers Italia con agenti AI non implica approvazione ufficiale.

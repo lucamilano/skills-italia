@@ -37,12 +37,12 @@ Review the final diff and untracked files before staging. The initial publicatio
 The initial repository settings were configured through GitHub's REST API using the owner's existing Git authentication. GitHub CLI was not installed. These equivalent CLI commands are documented for later authorized maintenance; they were not used during the initial setup:
 
 ```console
-gh repo edit lucamilano/skills-italia --description "Open-source AI agent skills for Italian Public Administration: accessible frontends, design systems, security, interoperability and digital services."
+gh repo edit lucamilano/skills-italia --description "Skill open source per agenti AI dedicate allo sviluppo di software e servizi digitali della Pubblica Amministrazione italiana. Primo modulo disponibile: frontend accessibili con il design system .italia."
 gh repo edit lucamilano/skills-italia --add-topic agent-skills,claude-code,openai-codex,public-administration,italian-public-administration,design-italia,bootstrap-italia,designers-italia,accessibility,open-source
 gh repo edit lucamilano/skills-italia --enable-issues --enable-discussions
 ```
 
-See [GitHub CLI repository editing](https://cli.github.com/manual/gh_repo_edit) and [GitHub topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics). The requested broad description reflects suite vision; the README immediately explains that security/interoperability modules are planned. Leave homepage unset until there is a real reachable documentation website. Upload `docs/assets/social-preview.png` through repository Settings → Social preview; standard `gh repo edit` does not set that image.
+See [GitHub CLI repository editing](https://cli.github.com/manual/gh_repo_edit) and [GitHub topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics). Keep the About description in Italian and aligned with the available modules; future security/interoperability modules remain explicitly planned in the roadmap. Leave homepage unset until there is a real reachable documentation website. Upload `docs/assets/social-preview.png` through repository Settings → Social preview; standard `gh repo edit` does not set that image.
 
 Enable secret scanning/push protection and dependency alerts where available; confirm Actions permissions and branch protection for `main`. Require the suite CI checks after their first successful remote run. Enable private vulnerability reporting through repository Security settings. Optionally enable Discussions for module proposals; Issues work without it.
 
