@@ -15,5 +15,6 @@
 | [Sources](sources.md) | Official documentation, libraries and content verification limits. |
 | [Discoverability and Pages](seo.md) | GitHub metadata, bilingual navigation and future web SEO criteria. |
 | [Publication](publication.md) | Local artifacts and manual GitHub configuration after approval. |
+| [GitHub publication status](publication-status.md) | Verified repository settings, three-platform CI and release distribution. |
 
 Skills Italia is independent. Only Italian PA Frontend is currently available; roadmap modules are not distributed implementations.
