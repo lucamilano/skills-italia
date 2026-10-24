@@ -17,7 +17,7 @@ Provide the affected module/version, environment, impact, minimal synthetic repr
 ## Operational boundaries
 
 - Install only from a reviewed local checkout or verified release archive. Installers copy local files, refuse unsafe path overlap and do not download dependencies or execute remote scripts.
-- Identical installations are a no-op. `--force` replaces a changed selected skill; back up local customizations first. Symlinked sources or destinations are rejected.
+- Identical installations are a no-op. `--force` replaces a changed selected skill; back up local customizations first. Application symlink/junction sources or destinations are rejected. Standard macOS `/var`, `/tmp` and `/etc` aliases are canonicalized only when they resolve to their expected `/private/` locations.
 - Browser tooling is optional and separate from application dependencies. Localhost is the default target. A remote staging target requires explicit authorization and `PA_ALLOW_REMOTE=1`; that variable is not proof of permission.
 - Keep browser storage state, credentials, personal data, screenshots of real users and production reports out of the repository and release archives. Ignore rules are not a complete secret scanner.
 - Preserve authorization, CSRF controls, input validation and output encoding during frontend work. A hidden button does not enforce server permissions.

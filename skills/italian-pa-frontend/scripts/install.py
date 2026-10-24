@@ -39,10 +39,14 @@ def linked(path):
 
 
 def plain_path(path):
-    """Reject links before resolution, including links in existing ancestors."""
+    """Reject application links; canonicalize only known macOS system aliases."""
     path = Path(os.path.abspath(path))
+    system_aliases = {'/var': '/private/var', '/tmp': '/private/tmp', '/etc': '/private/etc'}
     for item in (path, *path.parents):
         if linked(item):
+            expected = system_aliases.get(item.as_posix()) if sys.platform == 'darwin' else None
+            if expected and item.resolve(strict=True) == Path(expected):
+                continue
             raise ValueError(f'Symlink/junction paths are not supported: {item}')
     return path.resolve()
 

@@ -14,5 +14,6 @@ Initial public release of Skills Italia. Frontend skill version 1.0.0 is preserv
 - Integrated Italian PA Frontend 1.0.0, retaining its catalog, references, examples, validators, scripts, Python and Node tests, optional browser tests and historical documentation.
 - Added bilingual suite documentation, contribution and security policies, explicit future-module statuses and independent versioning rules.
 - Added cross-platform single/all skill installation, deterministic release packaging, structural and documentation checks, installation regression tests and CI.
+- Verified the installer against macOS system-directory aliases while retaining rejection of application symlinks and junctions.
 - Prepared GitHub metadata, original social preview, discoverability guidance and a decision to defer a public Pages site until its real URL is known.
 - Documented compatibility evidence separately from interactive agent and real-portal testing.

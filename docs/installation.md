@@ -68,7 +68,7 @@ When working on this suite's source, run module-local commands from `skills/ital
 
 ## Updates and removal
 
-An identical installation exits successfully without rewriting files. If the destination differs, installation fails before copying until you explicitly pass `--force`. First back up local customizations, then review the new version and run the same command with `--force`. Replacement removes obsolete files within the selected skill. Other installed skills are unaffected. Symlinks/junctions in a source or target path, source/destination overlap and unknown names are rejected.
+An identical installation exits successfully without rewriting files. If the destination differs, installation fails before copying until you explicitly pass `--force`. First back up local customizations, then review the new version and run the same command with `--force`. Replacement removes obsolete files within the selected skill. Other installed skills are unaffected. Application symlinks/junctions in a source or target path, source/destination overlap and unknown names are rejected. Standard macOS `/var`, `/tmp` and `/etc` aliases are accepted only after verifying and resolving their expected `/private/` targets.
 
 To remove a skill, delete only its exact directory under `.agents/skills/` or `.claude/skills/`, after checking the resolved path and backing up customizations. Restart the agent if its skill list remains cached. No settings or project source changes need to be reverted.
 

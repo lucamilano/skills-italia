@@ -145,6 +145,16 @@ class InstallationTests(unittest.TestCase):
             self.perform(agent='codex', force=True)
         self.assertEqual(list(outside.iterdir()), [])
 
+    @unittest.skipUnless(sys.platform == 'darwin', 'macOS system directory aliases')
+    def test_macos_system_temporary_alias_is_canonicalized(self):
+        with tempfile.TemporaryDirectory(prefix='skills italia alias ', dir='/var/tmp') as temp:
+            project = Path(temp)
+            plan = install.plan_install(ROOT, 'codex', 'project', project)
+            with contextlib.redirect_stdout(io.StringIO()):
+                install.install(plan)
+            self.assertTrue(plan[0][1].is_relative_to(Path('/private/var/tmp')))
+            self.assertTrue((project / '.agents/skills/italian-pa-frontend/SKILL.md').is_file())
+
     def test_cli_outside_source_cwd_and_nonexistent_project(self):
         command = [sys.executable, str(ROOT / 'scripts/install.py'), '--agent', 'codex',
                    '--skill', 'italian-pa-frontend', '--project-path', str(self.project)]
