@@ -4,7 +4,7 @@
 
 *AI Agent Skills for Italian Public Administration Development*
 
-[English](README.en.md) · [Installazione](installation.md) · [Roadmap](../ROADMAP.md) · [Contributi](../CONTRIBUTING.md) · [Licenza MIT](../LICENSE)
+[English](README.en.md) · [Modalità d'uso](#tre-modalità-operative-generate-audit-e-refactor) · [Installazione](installation.md) · [Roadmap](../ROADMAP.md) · [Contributi](../CONTRIBUTING.md) · [Licenza MIT](../LICENSE)
 
 [![Verifiche della suite](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml/badge.svg)](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml)
 
@@ -21,6 +21,22 @@ La suite **0.1.0** distribuisce Italian PA Frontend **1.0.0**. I due versionamen
 I servizi pubblici richiedono interfacce usabili, integrazioni affidabili e decisioni fondate sul progetto reale. La generazione generica di codice può mescolare versioni del design system Italia, sostituire componenti funzionanti o inventare capacità backend. Skills Italia guida l'analisi del repository, il riuso delle soluzioni esistenti, la consultazione delle fonti pertinenti e la rendicontazione delle verifiche effettive.
 
 Le competenze riutilizzabili sono pensate per gli agenti AI usati dagli sviluppatori. Supportano implementazione, analisi e manutenzione del software per la pubblica amministrazione, senza certificare conformità legale o sostituire valutazioni specialistiche.
+
+## Tre modalità operative: Generate, Audit e Refactor
+
+Il nucleo operativo della prima skill, **Italian PA Frontend**, comprende tre modalità. Puoi indicarle direttamente nel prompt iniziale, sia per avviare un nuovo portale PA sia per lavorare su un'applicazione già esistente.
+
+| Modalità | Quando usarla | Cosa produce |
+| --- | --- | --- |
+| **Generate — Crea** | Parti da zero oppure aggiungi pagine, componenti o una nuova sezione a un progetto. | Struttura delle interfacce, componenti, stati e codice frontend, con verifiche e report. Può anche preparare soltanto una specifica UX, se richiesto. |
+| **Audit — Analizza** | Vuoi capire qualità e criticità di un'interfaccia prima di intervenire. | Un report con evidenze, file e righe, priorità, impatto e proposte. Distingue problemi confermati, potenziali e controlli non eseguiti; **non modifica il codice di default**. |
+| **Refactor — Migliora** | Vuoi correggere o modernizzare il frontend mantenendo il comportamento del servizio. | Modifiche incrementali e verifiche di regressione, preservando stack, API, validazioni, autorizzazioni e logica esistenti. |
+
+**Generate può costruire il frontend di un portale da una cartella vuota.** Se non hai scelto una tecnologia e la scelta è indispensabile per scrivere codice, l'agente te la chiede; se il progetto esiste, ne rileva lo stack. Una scelta esplicita dell'utente ha sempre priorità.
+
+Le modalità riguardano il frontend disponibile oggi. Backend, autenticazione, persistenza e integrazioni reali richiedono contratti e servizi verificati. In un prototipo, eventuali dati sintetici e funzionalità dimostrative devono essere dichiarati.
+
+Trovi [esempi per ciascuna modalità](#esempi-duso) qui sotto e una [raccolta di prompt più dettagliati](../skills/italian-pa-frontend/examples/prompts.md). Sono modalità della stessa skill, non moduli da installare separatamente.
 
 ## Skill disponibili — Available Skills
 
@@ -97,34 +113,86 @@ Usa `--agent claude` per Claude Code, `--dry-run` per ispezionare le destinazion
 Esempio Codex:
 
 ```text
-Usa $italian-pa-frontend per analizzare questo progetto e migliorarne
-l'interfaccia seguendo il design system della Pubblica Amministrazione italiana.
-
-Rileva lo stack esistente, riusa i componenti disponibili e verifica
-l'accessibilità, distinguendo i controlli eseguiti da quelli ancora da svolgere.
+Usa $italian-pa-frontend in modalità Generate per creare da zero
+il frontend di un portale PA. Prima chiarisci con me scopo, pagine
+e tecnologia da usare; poi proponi la struttura e implementala
+seguendo il design system .italia, con le verifiche disponibili.
 ```
 
 Esempio con Claude Code per la pubblica amministrazione:
 
 ```text
-/italian-pa-frontend Analizza la dashboard amministrativa senza modificare file.
+/italian-pa-frontend In modalità Audit, analizza la dashboard senza modificare file.
 Verifica tastiera, filtri della tabella e stati di errore.
 Riporta evidenze distinguendo criticità confermate e controlli non eseguiti.
 ```
 
 ## Esempi d'uso
 
-```text
-Usa $italian-pa-frontend per migliorare il form di candidatura esistente.
-Rileva lo stack, riusa i componenti e conserva validazioni e autorizzazioni.
-Non inventare API per bozze o allegati. Verifica focus, errori e responsive.
-```
+Negli esempi si usa la sintassi Codex `$italian-pa-frontend`. In Claude Code puoi iniziare con `/italian-pa-frontend` seguito dalla stessa richiesta, oppure richiamare la skill per nome.
+
+### Generate — Un portale da zero
 
 ```text
-Usa la skill italian-pa-frontend per migliorare i risultati di ricerca del servizio.
-Mantieni lo stack Java/Thymeleaf e i contratti backend esistenti.
-Verifica ordinamento, paginazione, stati vuoti e accesso alle azioni da mobile.
+Usa $italian-pa-frontend in modalità Generate per creare il frontend
+di un portale comunale: homepage, catalogo servizi con ricerca,
+dettaglio del servizio e modulo di richiesta a più passaggi.
+Il progetto è nuovo: chiedimi la tecnologia prima di scrivere codice.
+Definisci pagine, componenti, stati ed errori, poi implementa e verifica.
+Se mancano API reali, usa dati sintetici esplicitamente dimostrativi.
 ```
+
+### Generate — Una nuova sezione nel progetto esistente
+
+```text
+Usa $italian-pa-frontend in modalità Generate per aggiungere una sezione
+gestione bandi con filtri, tabella e pagina di dettaglio.
+Rileva lo stack dal repository e riusa i componenti già disponibili.
+Collega soltanto API confermate; specifica le integrazioni mancanti.
+Gestisci caricamento, risultati vuoti, errori e layout mobile.
+```
+
+### Audit — Analizzare un portale senza modificarlo
+
+```text
+Usa $italian-pa-frontend in modalità Audit sul portale esistente.
+Non modificare i file. Analizza navigazione, componenti, responsive,
+accessibilità e coerenza con la versione del design system installata.
+Produci un report con priorità, evidenze file/riga e correzioni proposte.
+Distingui criticità confermate, potenziali e verifiche non eseguite.
+```
+
+### Audit — Verificare un form o un wizard
+
+```text
+Usa $italian-pa-frontend in modalità Audit sul wizard di candidatura.
+Controlla label, errori, focus, avanzamento e ritorno tra gli step,
+conservazione dei dati e distinzione tra bozza, upload e invio finale.
+Non applicare correzioni. Riporta prove, impatto e verifiche mancanti,
+senza dedurre capacità backend dalla sola interfaccia.
+```
+
+### Refactor — Migliorare un form conservando il servizio
+
+```text
+Usa $italian-pa-frontend in modalità Refactor sul form di candidatura.
+Rileva e mantieni lo stack. Conserva endpoint, validazioni server,
+autorizzazioni e protezioni CSRF. Riusa i componenti esistenti.
+Migliora label, riepilogo errori, focus e comportamento responsive.
+Procedi per piccoli interventi e verifica le regressioni.
+```
+
+### Refactor — Rendere usabile una tabella su mobile
+
+```text
+Usa $italian-pa-frontend in modalità Refactor sulla lista delle pratiche.
+Il progetto usa Java/Thymeleaf: mantieni questo stack e i contratti backend.
+Migliora filtri, ordinamento, paginazione e accesso alle azioni da mobile,
+senza perdere colonne, funzionalità o controlli di autorizzazione.
+Verifica tastiera, stati vuoti ed errori e documenta i test non eseguiti.
+```
+
+Per specifiche senza codice, audit mirati e refactoring con revisione browser iterativa, consulta gli [altri esempi della skill](../skills/italian-pa-frontend/examples/prompts.md).
 
 Per usare Bootstrap Italia con assistenza AI, chiedi prima di identificare la versione installata della libreria. La skill per Codex dedicata alla pubblica amministrazione è lo stesso modulo utilizzabile con Claude Code. L'uso di Designers Italia con agenti AI non implica approvazione ufficiale.
 

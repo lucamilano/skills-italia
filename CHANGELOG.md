@@ -4,6 +4,7 @@ Suite releases and individual skill releases have independent versions. Entries 
 
 ## [Unreleased]
 
+- Documented Generate, Audit and Refactor as core frontend operating modes, including creation from scratch, read-only analysis and incremental improvement, with mode-specific examples in both README languages and the skill's prompt collection.
 - Made Italian the primary language of the root README and GitHub About description; retained a complete English overview in `docs/README.en.md` and updated bilingual navigation.
 
 ## [0.1.0] — 2026-10-24

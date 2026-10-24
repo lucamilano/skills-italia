@@ -2,7 +2,7 @@
 
 **AI Agent Skills for Italian Public Administration Development**
 
-[Italiano — lingua principale](../README.md) · [Installation](installation.md) · [Roadmap](../ROADMAP.md) · [Contributing](../CONTRIBUTING.md) · [MIT license](../LICENSE)
+[Italiano — lingua principale](../README.md) · [Usage modes](#three-operating-modes-generate-audit-and-refactor) · [Installation](installation.md) · [Roadmap](../ROADMAP.md) · [Contributing](../CONTRIBUTING.md) · [MIT license](../LICENSE)
 
 [![Suite checks](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml/badge.svg)](https://github.com/lucamilano/skills-italia/actions/workflows/checks.yml)
 
@@ -21,6 +21,22 @@ Suite **0.1.0** packages Italian PA Frontend **1.0.0**. These versions have sepa
 Government services need usable interfaces, reliable integrations and technical decisions grounded in the actual project. Generic code generation can mix design-system versions, replace working components or invent backend capabilities. Skills Italia helps agents inspect the repository, reuse existing solutions, consult relevant sources and report what they actually verified.
 
 These Italian public administration AI skills support implementation, analysis and maintenance. They do not certify legal compliance or replace specialist review.
+
+## Three operating modes: Generate, Audit and Refactor
+
+The first skill, **Italian PA Frontend**, provides three core operating modes. Name the mode in your initial prompt when starting a new PA portal or working on an existing application.
+
+| Mode | When to use it | What it produces |
+| --- | --- | --- |
+| **Generate — Create** | Start from scratch or add pages, components or a new section to a project. | Interface structure, components, states and frontend code, with checks and a report. It can also produce only a UX specification when requested. |
+| **Audit — Analyze** | Understand interface quality and issues before making changes. | A prioritized report with evidence, files/lines, impact and proposed fixes. It separates confirmed issues, potential issues and checks not performed; **it does not change code by default**. |
+| **Refactor — Improve** | Correct or modernize the frontend while preserving service behavior. | Incremental changes and regression checks, preserving the existing stack, APIs, validation, authorization and business logic. |
+
+**Generate can build a portal's frontend from an empty directory.** If no technology is selected and that choice is necessary to write code, the agent asks for it; for an existing project it detects the stack. The user's explicit choice always takes priority.
+
+These modes cover the frontend available today. Backends, authentication, persistence and real integrations require verified contracts and services. Synthetic data and demonstration-only behavior in a prototype must be clearly identified.
+
+See [examples for each mode](#usage-examples) below and the [expanded prompt collection](../skills/italian-pa-frontend/examples/prompts.md). These are modes of the same skill, not separately installed modules.
 
 ## Available Skills
 
@@ -97,35 +113,86 @@ Use `--agent claude` for Claude Code, `--dry-run` to inspect destinations and `-
 Codex example:
 
 ```text
-Use $italian-pa-frontend to analyze this
-project and improve its UI following the
-Italian Public Administration Design System.
-
-Detect the existing stack, reuse available
-components and verify accessibility.
+Use $italian-pa-frontend in Generate mode to create a PA portal's
+frontend from scratch. First clarify the purpose, pages and technology
+with me; then propose the structure and implement it using design
+system .italia, performing the checks available in the environment.
 ```
 
 Claude Code example:
 
 ```text
-/italian-pa-frontend Audit the administrative dashboard without changing files.
+/italian-pa-frontend In Audit mode, analyze the dashboard without changing files.
 Check keyboard navigation, table filters and error states.
 Report evidence and distinguish confirmed issues from checks not performed.
 ```
 
 ## Usage examples
 
-```text
-Usa $italian-pa-frontend per migliorare il form di candidatura esistente.
-Rileva lo stack, riusa i componenti e conserva validazioni e autorizzazioni.
-Non inventare API per bozze o allegati. Verifica focus, errori e responsive.
-```
+These examples use Codex syntax, `$italian-pa-frontend`. In Claude Code, start with `/italian-pa-frontend` followed by the same request, or refer to the skill by name.
+
+### Generate — A portal from scratch
 
 ```text
-Use the italian-pa-frontend skill to refactor this service's search results.
-Keep the current Java/Thymeleaf stack and backend contracts.
-Check sorting, pagination, empty states and mobile access to every action.
+Use $italian-pa-frontend in Generate mode to create the frontend
+of a municipal portal: homepage, searchable service catalog,
+service details and a multi-step request form.
+This is a new project: ask for my technology choice before coding.
+Define pages, components, states and errors, then implement and verify.
+If real APIs are missing, use clearly labeled synthetic demo data.
 ```
+
+### Generate — A new section in an existing project
+
+```text
+Use $italian-pa-frontend in Generate mode to add a public-notice
+management section with filters, a table and a detail page.
+Detect the repository's stack and reuse available components.
+Connect only confirmed APIs and document missing integrations.
+Handle loading, empty results, errors and mobile layouts.
+```
+
+### Audit — Analyze a portal without changing it
+
+```text
+Use $italian-pa-frontend in Audit mode on the existing portal.
+Do not change files. Review navigation, components, responsive behavior,
+accessibility and consistency with the installed design-system version.
+Report priorities, file/line evidence and proposed corrections.
+Distinguish confirmed issues, potential issues and checks not performed.
+```
+
+### Audit — Review a form or wizard
+
+```text
+Use $italian-pa-frontend in Audit mode on the application wizard.
+Check labels, errors, focus, forward/back navigation, data preservation
+and the distinction between drafts, uploads and final submission.
+Do not apply fixes. Report evidence, impact and missing checks;
+do not infer backend capabilities from the interface alone.
+```
+
+### Refactor — Improve a form while preserving the service
+
+```text
+Use $italian-pa-frontend in Refactor mode on the application form.
+Detect and retain the stack. Preserve endpoints, server validation,
+authorization and CSRF protections. Reuse existing components.
+Improve labels, the error summary, focus and responsive behavior.
+Make incremental changes and check for regressions.
+```
+
+### Refactor — Make a table usable on mobile
+
+```text
+Use $italian-pa-frontend in Refactor mode on the case list.
+The project uses Java/Thymeleaf: retain that stack and backend contracts.
+Improve filters, sorting, pagination and mobile access to actions
+without losing columns, functionality or authorization checks.
+Test keyboard access, empty/error states and document checks not run.
+```
+
+For specifications without code, focused audits and refactoring with iterative browser review, see the skill's [additional examples](../skills/italian-pa-frontend/examples/prompts.md).
 
 For Bootstrap Italia AI assistance, ask the agent to identify the installed library version before consulting component examples. Designers Italia Codex workflows and Bootstrap Italia Claude Code workflows use the same independent skill; neither integration is an official endorsement.
 

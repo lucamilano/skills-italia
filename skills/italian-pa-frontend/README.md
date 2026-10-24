@@ -18,6 +18,20 @@ Primo modulo della suite **Skills Italia**. Questa cartella è anche un pacchett
 
 **Non** include runtime Bootstrap Italia né contenuti copiati dalle librerie ufficiali, non garantisce conformità normativa e include un modulo separato e opzionale di test browser, ma non esegue audit WCAG completi né li considera certificazioni.
 
+## Tre modalità: Generate, Audit e Refactor
+
+Indica la modalità nel prompt iniziale: la stessa skill può avviare il frontend di un nuovo portale, analizzarne uno esistente o migliorarlo per incrementi.
+
+| Modalità | Uso | Risultato |
+| --- | --- | --- |
+| **Generate** | Creare da zero, aggiungere pagine o componenti, preparare una specifica UX. | Proposta della struttura e implementazione frontend con stati, verifiche e limiti; oppure soltanto specifiche quando richiesto. |
+| **Audit** | Analizzare un'interfaccia prima di modificarla. | Report con priorità, evidenze file/riga e proposte, senza modifiche al codice di default. |
+| **Refactor** | Migliorare interfacce esistenti conservando il servizio. | Correzioni incrementali che mantengono stack, API, validazioni, autorizzazioni e comportamento, con verifiche di regressione. |
+
+Per un progetto nuovo senza tecnologia scelta, l'agente chiede lo stack solo quando necessario per generare codice. Nel progetto esistente rileva quello in uso; una scelta esplicita dell'utente ha priorità. Backend e integrazioni richiedono servizi verificati; i dati di un prototipo devono essere dichiarati dimostrativi.
+
+La [raccolta di prompt](examples/prompts.md) contiene esempi distinti per tutte e tre le modalità, inclusi portali da zero, audit mirati e revisione iterativa.
+
 ## Installazione rapida
 
 Copia **l'intera cartella `italian-pa-frontend`**, inclusi `references/`, `templates/`, `scripts/` ed `examples/`.
